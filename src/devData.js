@@ -3,7 +3,7 @@ import whiteIcon from "./assets/neil-white-icon.png"
 
 export const portfolioData = {
     personalInfo: {
-        name: "Neil Artus", 
+        name: "Neil Artus",
         email: "artus.neil.c@gmail.com",
         summary: "Software Engineer specializing in Python backend systems, Progressive Web Applications, and AI-powered applications, with hands-on experience deploying production workloads on Azure and bare-metal infrastructure.",
         resumePath: "/Artus-Resume.pdf",
@@ -18,17 +18,27 @@ export const portfolioData = {
         degree: "Bachelor of Science in Computer Science with Specialization in Intelligent Systems",
         honors: "GPA 3.5",
         relevantCoursework: [
-            "Programming", 
-            "Data Structures and Algorithms", 
-            "Machine Learning", 
-            "Databases", 
-            "Web Development", 
-            "Networking", 
+            "Programming",
+            "Data Structures and Algorithms",
+            "Machine Learning",
+            "Databases",
+            "Web Development",
+            "Networking",
             "Operating Systems"
         ],
         extraCurriculars: "Secretary, Codessey Program Head - Computer Science Program Council"
     },
     experience: [
+        {
+            company: "Emerson",
+            role: "AI/Cybersecurity Intern",
+            date: "March 2026 - Present",
+            responsibilities: [
+                // "Developed an internal HR automation tool that generates an attendance summary report for 10,000+ employees.",
+                // "Integrated the system with existing IT infrastructure on Hetzner bare-metal servers using Python.",
+                // "Implemented authentication and role-based access control using Microsoft Entra ID to protect employee data."
+            ]
+        },
         {
             company: "Albawani Co.",
             role: "Volunteer Software Engineer",
@@ -62,23 +72,23 @@ export const portfolioData = {
         }
     ],
     skills: {
-        languages: ["Python", "JavaScript"],
+        languages: ["Python", "JavaScript", "Go"],
         frameworks: [
-            "FastAPI", 
-            "Flask", 
-            "React", 
-            "Tailwind CSS", 
-            "TensorFlow", 
-            "PyTorch", 
+            "FastAPI",
+            "Flask",
+            "React",
+            "Tailwind CSS",
+            "TensorFlow",
+            "PyTorch",
             "LangChain"
         ],
         cloudTools: [
-            "Azure", 
-            "Google Cloud", 
-            "Hetzner", 
-            "Nginx", 
-            "Docker", 
-            "VertexAI", 
+            "Azure",
+            "Google Cloud",
+            "Hetzner",
+            "Nginx",
+            "Docker",
+            "VertexAI",
             "Pinecone"
         ]
     },
