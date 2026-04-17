@@ -34,9 +34,10 @@ export const portfolioData = {
             role: "AI/Cybersecurity Intern",
             date: "March 2026 - Present",
             responsibilities: [
-                // "Developed an internal HR automation tool that generates an attendance summary report for 10,000+ employees.",
-                // "Integrated the system with existing IT infrastructure on Hetzner bare-metal servers using Python.",
-                // "Implemented authentication and role-based access control using Microsoft Entra ID to protect employee data."
+                "Designed AI Agents using Semantic Kernel and Azure Foundry for detecting software security vulnerabilities. ",
+                "Architected and developed upgrades to cybersecurity compliance software for Emerson DeltaV using .NET 8.",
+                "Explored potential AI development risks and incorporated mitigations where applicable.",
+                "Used Typescript to create and use proprietary UI components.",
             ]
         },
         {
@@ -58,16 +59,6 @@ export const portfolioData = {
                 "Built robust data validation pipelines using SQL, Pandas, and Pydantic, ensuring high-fidelity outputs by programmatically comparing LLM responses against ground-truth scraped data.",
                 "Accelerated the turnover process by engineering a modular architecture and comprehensive documentation, enabling full-time engineers to deploy production code within 3 days of transfer.",
                 "Collaborated with an Agile team to transform raw financial data requirements into a working Proof of Concept (POC), bridging the gap between technical constraints and business needs."
-            ]
-        },
-        {
-            company: "Lyceum of the Philippines University - Cavite",
-            role: "Embedded AI Developer",
-            date: "March 2025 - June 2025",
-            responsibilities: [
-                "Coordinated with a non-technical team to train a Convolutional Neural Network based on MobileNet architecture using TensorFlow for osteoarthritis detection.",
-                "Wrote a Python script to run inference on a Raspberry Pi 5 connected to a thermal camera.",
-                "Awarded COESCA Research of the Year at LPU-Cavite Innovex 2025 Colloquium."
             ]
         }
     ],

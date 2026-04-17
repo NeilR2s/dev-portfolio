@@ -27,7 +27,7 @@ export default function Hero({ portfolioData }) {
 
                     <Button variant="default" size="default">
                         <a href={personalInfo.resumePath} target="_blank" rel="noreferrer" download={personalInfo.name + " Resume.pdf"}>
-                        Download Resume
+                            Download Resume
                         </a>
                     </Button>
 
