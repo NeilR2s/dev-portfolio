@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
 @import "tailwindcss" ;
 @import "tw-animate-css";
 @plugin "@tailwindcss/typography";
@@ -6,53 +7,11 @@
 
 /* @custom-variant dark (&:is(.dark *)); */
 
-/* google-sans-500 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Google Sans';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../fonts/google-sans-v67-latin-500.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/google-sans-v67-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/google-sans-v67-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/google-sans-v67-latin-500.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-       url('../fonts/google-sans-v67-latin-500.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-       url('../fonts/google-sans-v67-latin-500.svg#GoogleSans') format('svg'); /* Legacy iOS */
-}
-
-/* google-sans-600 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Google Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/google-sans-v67-latin-600.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/google-sans-v67-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/google-sans-v67-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/google-sans-v67-latin-600.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-       url('../fonts/google-sans-v67-latin-600.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-       url('../fonts/google-sans-v67-latin-600.svg#GoogleSans') format('svg'); /* Legacy iOS */
-}
-
-/* google-sans-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Google Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/google-sans-v67-latin-700.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/google-sans-v67-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/google-sans-v67-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/google-sans-v67-latin-700.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-       url('../fonts/google-sans-v67-latin-700.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-       url('../fonts/google-sans-v67-latin-700.svg#GoogleSans') format('svg'); /* Legacy iOS */
-}
-
 @theme {
     --font-*: initial;
-    --font-sans: "Google Sans", "sans-serif";
-    --font-primary: "Google Sans", "sans-serif";
-    --font-secondary: "Google Sans", "sans-serif";
+    --font-sans: "Google Sans Flex", "Google Sans", sans-serif;
+    --font-primary: "Google Sans Flex", "Google Sans", sans-serif;
+    --font-secondary: "Google Sans Flex", "Google Sans", sans-serif;
 }
 
 @theme inline {
@@ -96,7 +55,7 @@
 }
 
 :root {
-    --radius: 0.625rem;
+    --radius: 1rem;
     
     /* Original Palette */
     --background: oklch(1 0 0);
@@ -206,6 +165,7 @@
     }
   body {
     @apply bg-background text-foreground;
+    font-weight: 400;
     }
 }
 
