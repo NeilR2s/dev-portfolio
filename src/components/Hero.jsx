@@ -19,33 +19,33 @@ export default function Hero({ portfolioData }) {
                 </AvatarFallback>
             </Avatar>
             <div className="space-y-4 items-start">
-                <h1 className="text-4xl font-normal leading-tight">{personalInfo.name}</h1>
-                <div className="flex items-center gap-2 prose text-base text-muted-foreground">
+                <h1 className="text-5xl md:text-6xl font-normal leading-tight">{personalInfo.name}</h1>
+                <div className="flex max-w-2xl items-center gap-2 prose text-sm md:text-[15px] leading-relaxed text-muted-foreground">
                     <ReactMarkdown>{personalInfo.summary}</ReactMarkdown>
                 </div>
-                <div className="flex flex-wrap pt-2 space-x-2 space-y-1">
+                <div className="flex flex-wrap items-center pt-2 gap-3">
 
-                    <Button variant="default" size="default">
+                    <Button variant="default" size="lg" asChild className="rounded-full shadow-sm hover:shadow-md transition-all">
                         <a href={personalInfo.resumePath} target="_blank" rel="noreferrer" download={personalInfo.name + " Resume.pdf"}>
                             Download Resume
                         </a>
                     </Button>
 
-                    <Button variant="ghost" size="default" asChild>
+                    <Button variant="outline" size="default" asChild className="rounded-full bg-card hover:bg-muted/50 border-muted">
                         <a href={`mailto:${personalInfo.email}`} target="_blank" rel="noreferrer">
                             <Mail className="size-4" />
                             <span className="ml-2">{personalInfo.email}</span>
                         </a>
                     </Button>
 
-                    <Button variant="ghost" size="default" asChild>
+                    <Button variant="outline" size="default" asChild className="rounded-full bg-card hover:bg-muted/50 border-muted">
                         <a href={personalInfo.github} target="_blank" rel="noreferrer">
                             <Github className="size-4" />
                             <span className="ml-2">GitHub</span>
                         </a>
                     </Button>
 
-                    <Button variant="ghost" size="default" asChild>
+                    <Button variant="outline" size="default" asChild className="rounded-full bg-card hover:bg-muted/50 border-muted">
                         <a href={personalInfo.linkedin}>
                             <Linkedin className="size-4" />
                             <span className="ml-2">Linkedin</span>

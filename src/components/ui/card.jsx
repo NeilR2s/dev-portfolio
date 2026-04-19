@@ -5,16 +5,19 @@ import { cn } from "@/lib/utils"
 function Card({
     className,
     variant = "default", // "default" or "highlighted"
+    interactive = false,
     ...props
 }) {
     return (
         <div
             data-slot="card"
+            data-interactive={interactive ? "true" : undefined}
             className={cn(
-                "bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 [box-shadow:var(--shadow-sm)] transition-all duration-200", // Base styles
-                "hover:[box-shadow:var(--shadow-hover)]", // Default hover
+                "bg-card text-card-foreground flex flex-col gap-6 rounded-3xl border py-6 [box-shadow:var(--shadow-sm)] transition-[background-color,border-color,box-shadow] duration-200 ease-out motion-reduce:transition-none",
                 {
-                    "[background-color:var(--surface-elevated)] [box-shadow:var(--shadow-md)] hover:[box-shadow:var(--shadow-lg)]": variant === "highlighted", // Highlighted variant
+                    "[background-color:var(--surface-elevated)] [box-shadow:var(--shadow-md)]": variant === "highlighted",
+                    "focus-visible:ring-ring/50 focus-visible:ring-[3px] focus-visible:outline-none hover:border-foreground/10 hover:[box-shadow:var(--shadow-hover)] active:[box-shadow:var(--shadow-sm)]": interactive && variant === "default",
+                    "focus-visible:ring-ring/50 focus-visible:ring-[3px] focus-visible:outline-none hover:border-foreground/10 hover:[box-shadow:var(--shadow-lg)] active:[box-shadow:var(--shadow-md)]": interactive && variant === "highlighted",
                 },
                 className
             )}
@@ -44,7 +47,7 @@ function CardTitle({
     return (
         <div
             data-slot="card-title"
-            className={cn("leading-normal font-semibold", className)}
+            className={cn("leading-normal font-medium", className)}
             {...props} />
     );
 }

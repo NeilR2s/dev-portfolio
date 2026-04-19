@@ -26,7 +26,7 @@ export default function Header({ portfolioData }) {
                             <AvatarImage class="isDarkable" src={personalInfo.iconBlack} alt={personalInfo.name} />
                         <AvatarFallback>{personalInfo.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                     </Avatar>
-                    {/* <span className="font-semibold">{personalInfo.name}</span> */}
+                    {/* <span className="font-medium">{personalInfo.name}</span> */}
                 </div>
 
                 <NavigationMenu className="hidden md:flex">

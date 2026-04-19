@@ -9,31 +9,34 @@ import {
 } from "@/components/ui/card"
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
-import { Github, ExternalLink } from "lucide-react";
+import { Github, ExternalLink, Image as ImageIcon } from "lucide-react";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
-export default function Projects({portfolioData}) {
+export default function Projects({ portfolioData }) {
     return (
         <section id="projects" className="space-y-4">
-            <SectionHeader  title="Projects" />
-            <div className="grid grid-cols-[auto, 1fr] gap-6">
+            <SectionHeader title="Projects" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {portfolioData.projects.map((project, index) => (
-                    <Card key={index} className="flex flex-col border border-muted hover:border-primary/15 transition-colors h-full">
-                        
-                        <CardHeader className="pb-0.5">
-                            <CardTitle className="text-xl">{project.title}</CardTitle>
+                    <Card key={index} className="flex flex-col overflow-hidden border border-muted/60 h-full">
 
-                            <CardDescription className="text-base text-foreground/60 leading-snug">
+                        <img
+                            src={project.preview}
+                            alt="Event cover"
+                            // className="relative z-20 aspect-video w-full object-cover"
+                            className="relative z-20 aspect-video w-full object-cover brightness-100 dark:brightness-40"
+
+                        />
+
+                            <CardHeader className="pb-0.5 pt-6">
+                                <CardTitle className="text-xl">{project.title}</CardTitle>
+
+                            <CardDescription className="text-sm md:text-[15px] text-muted-foreground leading-relaxed">
                                 {project.summary}
                             </CardDescription>
                         </CardHeader>
-                        
-                        <CardContent className="flex-grow space-y-6">
-                            <div className="bg-secondary/30 p-3 rounded-md border-l-2 border-primary">
-                                <p className="text-sm font-medium italic text-muted-foreground">
-                                    "{project.impact}"
-                                </p>
-                            </div>
 
+                        <CardContent className="flex-grow space-y-6 pt-4">
                             <div className="flex flex-wrap gap-2">
                                 {project.technologies.map((tech, i) => (
                                     <Badge variant="secondary" key={i} className="text-xs">
@@ -43,7 +46,8 @@ export default function Projects({portfolioData}) {
                             </div>
                         </CardContent>
 
-                        <CardFooter className="gap-3">
+
+                        <CardFooter className="gap-3 pt-4">
                             {/* Logic to handle specific links */}
                             {project.githubLink ? (
                                 <Button variant="outline" size="sm" asChild>
@@ -78,8 +82,9 @@ export default function Projects({portfolioData}) {
                             )}
                         </CardFooter>
                     </Card>
-                ))}
-            </div>
-        </section>
+                ))
+                }
+            </div >
+        </section >
     );
 }

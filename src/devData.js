@@ -1,5 +1,11 @@
 import blackIcon from "./assets/neil-black-icon.png"
 import whiteIcon from "./assets/neil-white-icon.png"
+import agosScreenshot from "./assets/agos.png"
+import albawaniScreenshot from "./assets/albawani.png"
+import alersenseScreenshot from "./assets/alersense.png"
+import bitbitScreenshot from "./assets/bitbit.png"
+import mediseenScreenshot from "./assets/mediseen.png"
+import osteoScreenshot from "./assets/osteo.jpeg"
 
 export const portfolioData = {
     personalInfo: {
@@ -63,13 +69,13 @@ export const portfolioData = {
         }
     ],
     skills: {
-        languages: ["Python", "JavaScript", "Go"],
+        languages: ["C#", "Python", "Typescript", "Go"],
         frameworks: [
+            ".NET",
             "FastAPI",
             "Flask",
             "React",
-            "Tailwind CSS",
-            "TensorFlow",
+            "Tailwind",
             "PyTorch",
             "LangChain"
         ],
@@ -80,10 +86,39 @@ export const portfolioData = {
             "Nginx",
             "Docker",
             "VertexAI",
-            "Pinecone"
+            "Pinecone",
+            "Ubuntu"
         ]
     },
     projects: [
+        {
+            title: "AGOS",
+            summary: "A multi-package platform for Philippine market data ingestion, portfolio operations, forecasting, and operator- facing research and trading workflows.Features decoupled microservices and LLM-driven AI agents.",
+            technologies: [
+                "React",
+                "Vite",
+                "FastAPI",
+                "Python",
+                "Cosmos DB",
+                "Firebase",
+                "Gemini API",
+                "Tavily",
+                "Chronos"
+            ],
+            impact: "Automated the ingestion of complex financial data(PSE, PSA, BSP) and streamlined quantitative trading operations by enabling predictive market forecasting and rule- gated trade evaluations.",
+            deploymentLink: "https://agos-agentic.vercel.app",
+            githubLink: "https://github.com/NeilR2s/agos",
+            preview: agosScreenshot
+        },
+        {
+            title: "MediSeen",
+            summary: "An AI-powered Progressive Web Application (PWA) providing real-time clinical decision support.",
+            impact: "Reduced average request latency to 98ms via microservices and increased system usability scores by 15%.",
+            technologies: ["PyTorch", "Azure", "GCP", "React", "Tailwind", "FastAPI", "Cloudflare"],
+            deploymentLink: "https://mediseen-2.vercel.app",
+            githubLink: null,
+            preview: mediseenScreenshot
+        },
         {
             title: "Albawani HR Request Form",
             summary: "An attendance request form with role-based access control via Microsoft EntraID to simplify attedance report generation. Integrated the system with existing IT infrastructure on Hetzner bare-metal servers.",
@@ -92,30 +127,23 @@ export const portfolioData = {
             impact: "Simplified internal HR operations by developing an internal tool to automate employee attendance tracking.",
             deploymentLink: null,
             githubLink: "https://github.com/NeilR2s/albawani-request-form",
+            preview: albawaniScreenshot
         },
         {
-            title: "MediSeen",
-            summary: "An AI-powered Progressive Web Application (PWA) providing real-time clinical decision support.",
-            impact: "Reduced average request latency to 98ms via microservices and increased system usability scores by 15%.",
-            technologies: ["PyTorch", "Azure", "GCP", "React", "Tailwind", "FastAPI", "Cloudflare"],
-            deploymentLink: "https://www.mediseen.site/",
-            githubLink: null,
-        },
-        {
-            title: "Formal Language Compiler",
-            summary: "An interactive visualization engine for Deterministic Finite Automata (DFA) and formal languages.",
-            impact: "Ensured 100% algorithmic accuracy for complex state transitions using rigorous Pytest coverage.",
-            technologies: ["Flask", "Javascript", "Python", "pytest"],
-            deploymentLink: "https://nr2s.pythonanywhere.com/",
-            githubLink: "https://github.com/NeilR2s/DFA-Visualizer",
-        },
-        {
-            title: "Bitbit",
-            summary: "A Cold Start 2025 entry featuring a marketplace frontend designed to bootstrap user liquidity and transaction flow.",
-            impact: "Built a responsive, high-performance Progressive Web Application (PWA) from scratch using React and Tailwind CSS.",
-            technologies: ["React", "Tailwind"],
-            deploymentLink: "https://cold-start-marketplace.vercel.app/",
-            githubLink: "https://github.com/NeilR2s/cold-start-marketplace",
+            title: "AlerSense",
+            summary: "An IoT attention monitoring system that tracks physiological data(Heart Rate, SpO2, Temperature) via an ESP32 wearable, processed through a Python inference hub, and visualized on a Next.js dashboard.",
+            impact: "Architected a low- latency, real - time data pipeline using Flask - SocketIO to ingest hardware telemetry, evaluate physiological thresholds, and broadcast state updates instantly to the frontend UI without page refreshes.",
+            technologies: [
+                "C++",
+                "ESP32",
+                "Flask",
+                "Next.js",
+                "Firebase",
+                "Azure",
+            ],
+            deploymentLink: "https://alersense.vercel.app",
+            githubLink: "https://github.com/NeilR2s/alersense",
+            preview: alersenseScreenshot
         },
         {
             title: "Thermal Camera Osteoarthritis Detector",
@@ -123,8 +151,26 @@ export const portfolioData = {
             impact: "Awarded 'Research of the Year' at the LPU-Cavite Innovex 2025 Colloquium.",
             technologies: ["Python", "Tensorflow", "Numpy"],
             deploymentLink: null,
-            githubLink: "https://github.com/NeilR2s/scripts",
-            infoLink: "https://www.facebook.com/share/p/1D5AdFLZzQ/"
-        }
+            githubLink: "https://github.com/NeilR2s/raspberry-pi-osteoarthritis-detection",
+            infoLink: "https://www.facebook.com/share/p/1D5AdFLZzQ/",
+            preview: osteoScreenshot,
+        },
+        {
+            title: "Bitbit",
+            summary: "A Cold Start 2025 entry featuring a marketplace frontend designed to bootstrap user liquidity and transaction flow.",
+            impact: "Built a responsive, high-performance Progressive Web Application (PWA) from scratch using React and Tailwind CSS.",
+            technologies: ["React", "Tailwind"],
+            deploymentLink: "https://bitbit-marketplace.vercel.app",
+            githubLink: "https://github.com/NeilR2s/cold-start-marketplace",
+            preview: bitbitScreenshot
+        },
+        // {
+        //     title: "Formal Language Compiler",
+        //     summary: "An interactive visualization engine for Deterministic Finite Automata (DFA) and formal languages.",
+        //     impact: "Ensured 100% algorithmic accuracy for complex state transitions using rigorous Pytest coverage.",
+        //     technologies: ["Flask", "Javascript", "Python", "pytest"],
+        //     deploymentLink: "https://dfa-nr2s.vercel.app",
+        //     githubLink: "https://github.com/NeilR2s/DFA-Visualizer",
+        // },
     ]
 };
