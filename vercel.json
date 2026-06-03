@@ -1,9 +1,39 @@
 {
     "$schema": "https://openapi.vercel.sh/vercel.json",
     "bunVersion": "1.x",
+    "headers": [
+        {
+            "source": "/llms.txt",
+            "headers": [
+                { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+                { "key": "Cache-Control", "value": "public, max-age=86400" }
+            ]
+        },
+        {
+            "source": "/llms-full.txt",
+            "headers": [
+                { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+                { "key": "Cache-Control", "value": "public, max-age=86400" }
+            ]
+        },
+        {
+            "source": "/sitemap.xml",
+            "headers": [
+                { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
+                { "key": "Cache-Control", "value": "public, max-age=86400" }
+            ]
+        },
+        {
+            "source": "/robots.txt",
+            "headers": [
+                { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+                { "key": "Cache-Control", "value": "public, max-age=86400" }
+            ]
+        }
+    ],
     "rewrites": [
         {
-            "source": "/(.*)",
+            "source": "/((?!llms\\.txt|llms-full\\.txt|sitemap\\.xml|robots\\.txt|Artus-Resume\\.pdf|manifest\\.json|favicon\\.ico|icon512_maskable\\.png|icon512_rounded\\.png).*)",
             "destination": "/index.html"
         }
     ]

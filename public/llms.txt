@@ -1,0 +1,44 @@
+# Neil Artus – Software Engineer
+
+> Software Engineer specializing in Python backend systems, AI-powered applications, and Progressive Web Applications with production experience on Azure and bare-metal infrastructure.
+
+## Contact & Links
+
+- Email: artus.neil.c@gmail.com
+- Portfolio: https://nr2s.vercel.app
+- GitHub: https://github.com/NeilR2s
+- LinkedIn: https://www.linkedin.com/in/neil-artus-652115304
+- Resume: https://nr2s.vercel.app/Artus-Resume.pdf
+
+## Full Context
+
+- Full Details: https://nr2s.vercel.app/llms-full.txt
+
+## Skills Summary
+
+Languages: Python, Go, C#, JavaScript, TypeScript, SQL
+Web/Backend: FastAPI, Flask, React, Next.js, Vite, Tailwind CSS, .NET, Fiber
+Data: Cosmos DB, PostgreSQL, Qdrant, Microsoft SQL Server, SQLite, Pandas, Pydantic
+AI/ML: PyTorch, LangChain, Langsmith, Semantic Kernel, Google VertexAI, Pinecone, Azure Foundry, Azure OpenAI
+Cloud/DevOps: Azure DevOps, Docker, Firebase, Hetzner, Nginx, Gunicorn, Ubuntu, Windows Server 2022, Power Automate
+
+## Experience Summary
+
+- **AI Engineer Intern at Emerson** (Mar 2026 – Jul 2026): AI agents, .NET 8, Azure DevOps CI/CD, MCP compliance
+- **Freelance Software Engineer at Albawani Co.** (Aug 2025 – Jan 2026): HR automation, Hetzner, Entra ID
+- **GenAI Research Intern at JG Summit Holdings Inc.** (Jun 2025 – Aug 2025): GenAI BI dashboard, LangChain, RAG
+
+## Projects
+
+- AGOS: https://agos-agentic.vercel.app | https://github.com/NeilR2s/agos
+- MediSeen: https://mediseen-2.vercel.app
+- Albawani HR Request Form: https://github.com/NeilR2s/albawani-request-form
+- CNN-Osteo: https://github.com/NeilR2s/raspberry-pi-osteoarthritis-detection
+- AlerSense: https://alersense.vercel.app | https://github.com/NeilR2s/alersense
+- Bitbit: https://bitbit-marketplace.vercel.app | https://github.com/NeilR2s/cold-start-marketplace
+- Formal Language Compiler: https://dfa-visualizer-nr2s.vercel.app | https://github.com/NeilR2s/DFA-Visualizer
+
+## Education
+
+De La Salle University – Dasmariñas | BS Computer Science, Intelligent Systems (AI) | GPA: 3.5/4.0
+Consistent Dean's Lister (2022–2025) | Leadership Awardee

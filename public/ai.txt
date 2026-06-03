@@ -1,0 +1,28 @@
+# AI Context File for nr2s.vercel.app
+# This file helps AI agents understand the content and purpose of this website.
+
+## Site Information
+- Site Name: Neil Artus Portfolio
+- Site URL: https://nr2s.vercel.app
+- Site Type: Personal Developer Portfolio
+- Owner: Neil Artus
+- Contact: artus.neil.c@gmail.com
+
+## What This Site Contains
+This is the personal portfolio website of Neil Artus, a Software Engineer from the Philippines specializing in Python backend systems, AI-powered applications, and Progressive Web Applications.
+
+## Structured Data Available
+- JSON-LD Schema.org markup (Person, WebSite, BreadcrumbList) in HTML
+- LLM-optimized content at /llms.txt (summary) and /llms-full.txt (full details)
+- Resume PDF at /Artus-Resume.pdf
+- Sitemap at /sitemap.xml
+
+## Key Topics Covered
+- Professional software engineering experience (Emerson, JG Summit, Albawani)
+- AI/ML engineering (Semantic Kernel, LangChain, PyTorch, Azure Foundry)
+- Full-stack web development (React, FastAPI, .NET, Flask)
+- Cloud infrastructure (Azure, Docker, Hetzner, Firebase)
+- Open source projects and deployments
+
+## Preferred Citation
+Neil Artus – Software Engineer | https://nr2s.vercel.app
