@@ -3,7 +3,6 @@ import whiteIcon from "./assets/neil-white-icon.png"
 import agosScreenshot from "./assets/agos.png"
 import albawaniScreenshot from "./assets/albawani.png"
 import alersenseScreenshot from "./assets/alersense.png"
-import bitbitScreenshot from "./assets/bitbit.png"
 import mediseenScreenshot from "./assets/mediseen.png"
 import osteoScreenshot from "./assets/osteo.jpeg"
 import dfaScreenshot from "./assets/dfacompiler.png"
@@ -12,7 +11,7 @@ export const portfolioData = {
     personalInfo: {
         name: "Neil Artus",
         email: "artus.neil.c@gmail.com",
-        summary: "Software Engineer specializing in Python backend systems, Progressive Web Applications, and AI-powered applications, with hands-on experience deploying production workloads on Azure and bare-metal infrastructure.",
+        summary: "Software Engineer specializing in backend systems, Agentic AI architectures, and cloud deployments. Experienced in building production microservices, full-stack web applications, and automated CI/CD pipelines across Azure and bare-metal environments. Proven background in delivering high-impact automation tools, secure API integrations, and low-latency data pipelines.",
         resumePath: "/Artus-Resume.pdf",
         github: "https://github.com/NeilR2s",
         linkedin: "https://www.linkedin.com/in/neil-artus-652115304",
@@ -23,21 +22,20 @@ export const portfolioData = {
     education: {
         institution: "De La Salle University - Dasmariñas",
         degree: "Bachelor of Science in Computer Science with Specialization in Intelligent Systems (AI)",
-        honors: "GPA 3.5/4.0",
+        honors: "Magna Cum Laude | GPA 3.52/4.0 | TOEIC 955/990",
         relevantCoursework: [
-            "Programming",
-            "Data Structures",
-            "Algorithms",
+            "Data Structures & Algorithms",
             "Machine Learning",
-            "Databases",
+            "Database Systems",
             "Web Development",
-            "Networking",
-            "Operating Systems"
+            "Computer Networks",
+            "Operating Systems",
+            "Software Engineering"
         ],
-        extraCurriculars: "Secretary, Codessey Program Head - Computer Science Program Council",
+        extraCurriculars: "Secretary & Codeyssey Program Head – Computer Science Program Council (CSPC); managed technical workshops and hackathons for 1,000+ students",
         achievements: [
-            "Consistent Dean's Lister (2022-2025)",
-            "Leadership Awardee Recipient"
+            "CSPC Leadership Award Recipient",
+            "Dean's Honor List"
         ]
     },
     experience: [
@@ -46,11 +44,12 @@ export const portfolioData = {
             role: "AI Engineer Intern",
             date: "March 2026 - July 2026",
             responsibilities: [
-                "Designed AI agents with Semantic Kernel and Azure Foundry for detecting software security vulnerabilities.",
-                "Developed upgrades and implemented bug fixes to Emerson DeltaV cybersecurity compliance software using .NET 8, decreasing interim release cycle by 2 weeks.",
-                "Built Azure DevOps CI/CD pipelines that reduced manual build and deploy time by 85%.",
-                "Delivered workflow improvements that saved 800 analyst hours and reduced completion time to 67 seconds, contributing to $50,000 in reported cost savings.",
-                "Contributed to Model Context Protocol (MCP) secure development compliance software and hardening guidelines, creating coverage for 50% of current departmental AI Agent projects.",
+                "Automated cybersecurity compliance workflows using Azure AI Foundry Agents, custom hardened Model Context Protocol (MCP) integrations (Black Duck, OpenSSF, GitHub), and multi-agent orchestration graphs, saving 1,600+ analyst hours and $85,000+ in operational expenses.",
+                "Built a real-time telemetry monitoring dashboard for AI agents and supply chain security metrics with sub-100ms p99 latency, establishing organizational secure development guidelines for MCP implementations.",
+                "Upgraded and deployed security hotfixes for Emerson DeltaV compliance software using .NET 8, accelerating vulnerability mitigation and report generation speeds by 30%.",
+                "Designed and maintained automated Azure DevOps CI/CD pipelines, reducing manual build and deployment cycles by 85%.",
+                "Refactored legacy design system UI components using React, Radix UI, TanStack Table, and Recharts.",
+                "Implemented enterprise authentication and access management using Okta, Microsoft Entra ID (Azure AD), and .NET middleware.",
             ]
         },
         {
@@ -58,19 +57,20 @@ export const portfolioData = {
             role: "Freelance Software Engineer",
             date: "August 2025 - January 2026",
             responsibilities: [
-                "Developed an internal HR automation tool in Python that generates attendance summary reports for 10,000+ employees.",
-                "Integrated the system with existing IT infrastructure on Hetzner bare-metal servers using Python.",
-                "Implemented authentication and role-based access control using Microsoft Entra ID to protect employee data."
+                "Developed an internal HR automation application in Python that processes and generates attendance summary reports for 10,000+ employees, cutting manual reporting time by 50% per pay cycle.",
+                "Deployed and configured backend services on Hetzner bare-metal Linux servers, integrating directly with existing enterprise IT infrastructure.",
+                "Implemented secure authentication and Role-Based Access Control (RBAC) using Microsoft Entra ID to safeguard employee personal records."
             ]
         },
         {
             company: "JG Summit Holdings Inc.",
-            role: "GenAI Research Intern",
+            role: "AI Engineer Intern (GenAI Research)",
             date: "June 2025 - August 2025",
             responsibilities: [
-                "Developed and deployed a full-stack GenAI BI Dashboard for the Treasury Department using Azure OpenAI, LangChain, and agentic RAG across 12+ data sources, reducing manual workflow time by 70%.",
-                "Built data validation pipelines with SQL and Pydantic, processing 500+ monthly data points and achieving 93% accuracy.",
-                "Structured the project architecture and documentation for a 4-component system, enabling 3 full-time engineers to deploy to production within 3 days of handoff."
+                "Developed and deployed a full-stack Business Intelligence dashboard using Azure OpenAI and LangChain, delivering automated financial reporting workflows to Treasury and Corporate Strategy teams.",
+                "Built an Agentic RAG (Retrieval-Augmented Generation) pipeline across 12+ enterprise data sources, decreasing manual financial analysis turnaround by 70%.",
+                "Engineered automated data validation pipelines using SQL and Pydantic, processing 500+ monthly data points with 93% validation accuracy.",
+                "Authored modular system architecture blueprints and technical documentation, enabling handoff and production deployment by 1 senior and 2 junior engineers within 3 days."
             ]
         }
     ],
@@ -85,29 +85,29 @@ export const portfolioData = {
             "Vite",
             "Tailwind CSS",
             "Fiber",
-            "PyTorch",
-            "LangChain",
-            "Langsmith",
-            "Semantic Kernel"
+            "OpenTelemetry"
         ],
         data: [
             "Cosmos DB",
             "PostgreSQL",
             "Qdrant",
             "Microsoft SQL Server",
+            "Entity Framework",
             "SQLite",
             "Pandas",
             "Pydantic"
         ],
         aiMl: [
-            "PyTorch",
+            "Azure OpenAI",
+            "Azure AI Foundry",
             "LangChain",
-            "Langsmith",
+            "LangGraph",
             "Semantic Kernel",
-            "Google VertexAI",
-            "Pinecone",
-            "Azure Foundry",
-            "Azure OpenAI"
+            "Google Vertex AI",
+            "PyTorch",
+            "TensorFlow",
+            "Retrieval-Augmented Generation (RAG)",
+            "Model Context Protocol (MCP)"
         ],
         cloudTools: [
             "Azure DevOps",
@@ -116,9 +116,19 @@ export const portfolioData = {
             "Hetzner",
             "Nginx",
             "Gunicorn",
-            "Ubuntu",
+            "Ubuntu Linux",
             "Windows Server 2022",
-            "Power Automate"
+            "CI/CD"
+        ],
+        securityTools: [
+            "Microsoft Entra ID (Azure AD)",
+            "Okta",
+            "Role-Based Access Control (RBAC)",
+            "SonarQube",
+            "Black Duck",
+            "Coverity",
+            "Cloudflare",
+            "Git"
         ]
     },
     projects: [
@@ -157,14 +167,14 @@ export const portfolioData = {
             technologies: ["Azure", "EntraID", "Flask", "Javascript", "TailwindCSS", "Hetzner"],
             impact: "Simplified internal HR operations by developing an internal tool to automate employee attendance tracking for 10,000+ employees.",
             deploymentLink: null,
-            githubLink: "https://github.com/NeilR2s/albawani-request-form",
+            githubLink: null,
             preview: albawaniScreenshot
         },
         {
             title: "CNN-Osteo",
-            summary: "An IoT-integrated deep learning solution utilizing thermal imaging for early osteoarthritis detection. Based on MobileNet architecture using TensorFlow.",
-            impact: "Awarded 1st place at the Cavite Innovex 2025 Colloquium. Reported 99.40% validation accuracy and 98.19% test accuracy on 1,572 training images and 664 test images.",
-            technologies: ["Python", "TensorFlow", "Numpy", "MobileNet"],
+            summary: "Thermal imaging CNN for automated osteoarthritis detection using MobileNet and TensorFlow, deployed on Raspberry Pi 5 with real-time thermal diagnostics.",
+            impact: "Awarded 1st place at the Cavite Innovex 2025 Colloquium (COESCA Research of the Year). Trained on 2,236 medical images with 99.40% validation accuracy and 98.19% test accuracy.",
+            technologies: ["Python", "TensorFlow", "Numpy", "MobileNet", "Raspberry Pi"],
             deploymentLink: null,
             githubLink: "https://github.com/NeilR2s/raspberry-pi-osteoarthritis-detection",
             infoLink: "https://www.facebook.com/share/p/1D5AdFLZzQ/",
@@ -173,7 +183,7 @@ export const portfolioData = {
         {
             title: "AlerSense",
             summary: "An ESP32-based attention-monitoring system with a Python inference data hub, Flask-SocketIO API, and Next.js real-time alert dashboard.",
-            impact: "Implemented HTTP JSON telemetry ingestion for heart rate, SpO2, temperature, and related sensor metrics, then broadcast processed alerts without page refresh.",
+            impact: "Implemented HTTP JSON telemetry ingestion for heart rate, SpO2, temperature, and related sensor metrics with real-time broadcast without page reloads.",
             technologies: [
                 "C++",
                 "ESP32",
@@ -186,19 +196,10 @@ export const portfolioData = {
             githubLink: "https://github.com/NeilR2s/alersense",
             preview: alersenseScreenshot
         },
-        // {
-        //     title: "Bitbit",
-        //     summary: "A Cold Start 2025 entry featuring a marketplace frontend designed to bootstrap user liquidity and transaction flow.",
-        //     impact: "Built a responsive, high-performance Progressive Web Application (PWA) from scratch using React and Tailwind CSS.",
-        //     technologies: ["React", "Tailwind"],
-        //     deploymentLink: "https://bitbit-marketplace.vercel.app",
-        //     githubLink: "https://github.com/NeilR2s/cold-start-marketplace",
-        //     preview: bitbitScreenshot
-        // },
         {
             title: "Formal Language Compiler",
-            summary: "A web compiler for visualizing deterministic formal languages. Separated DFA simulation logic from Flask routes with pytest coverage for behavior against formal definitions.",
-            impact: "Ensured 100% algorithmic accuracy for complex state transitions using rigorous Pytest coverage.",
+            summary: "Interactive web-based DFA simulator and compiler using TypeScript, Flask, and SVG rendering to model state transitions and formal grammar logic in real time.",
+            impact: "Decoupled automata simulation algorithms from API routing logic with pytest suites verifying strict compliance with formal language specifications.",
             technologies: ["TypeScript", "Flask", "Python", "pytest"],
             deploymentLink: "https://dfa-visualizer-nr2s.vercel.app/",
             githubLink: "https://github.com/NeilR2s/DFA-Visualizer",

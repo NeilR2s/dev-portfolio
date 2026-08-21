@@ -9,20 +9,21 @@
 - Contact: artus.neil.c@gmail.com
 
 ## What This Site Contains
-This is the personal portfolio website of Neil Artus, a Software Engineer from the Philippines specializing in Python backend systems, AI-powered applications, and Progressive Web Applications.
+This is the personal portfolio of Neil Artus, a Software Engineer specializing in backend systems, Agentic AI architectures, and cloud deployments across Azure and bare-metal infrastructure. Focus areas include production microservices, secure API integrations, and low-latency data pipelines.
 
 ## Structured Data Available
-- JSON-LD Schema.org markup (Person, WebSite, BreadcrumbList) in HTML
+- JSON-LD Schema.org markup (Person, WebSite, BreadcrumbList, ItemList, SoftwareSourceCode) in HTML
 - LLM-optimized content at /llms.txt (summary) and /llms-full.txt (full details)
 - Resume PDF at /Artus-Resume.pdf
 - Sitemap at /sitemap.xml
 
 ## Key Topics Covered
-- Professional software engineering experience (Emerson, JG Summit, Albawani)
-- AI/ML engineering (Semantic Kernel, LangChain, PyTorch, Azure Foundry)
-- Full-stack web development (React, FastAPI, .NET, Flask)
-- Cloud infrastructure (Azure, Docker, Hetzner, Firebase)
-- Open source projects and deployments
+- Professional experience: Emerson (AI Engineer Intern, Azure AI Foundry/MCP), Albawani (HR automation), JG Summit (GenAI Research, Agentic RAG)
+- AI/ML: Azure OpenAI, Azure AI Foundry, LangChain, LangGraph, Semantic Kernel, Vertex AI, PyTorch, TensorFlow, RAG, MCP
+- Web/Backend: React, FastAPI, .NET, Flask, Fiber, OpenTelemetry, Radix UI, TanStack Table
+- Data: Cosmos DB, PostgreSQL, Qdrant, SQL Server, Entity Framework, Pydantic
+- Cloud/DevOps/Security: Azure DevOps, Docker, Hetzner, Nginx, Okta, Entra ID, SonarQube, Black Duck, Coverity, Cloudflare
+- Projects: AGOS, MediSeen, CNN-Osteo, AlerSense, DFA Compiler, Albawani HR
 
 ## Preferred Citation
 Neil Artus – Software Engineer | https://nr2s.vercel.app

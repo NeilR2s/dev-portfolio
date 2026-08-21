@@ -1,6 +1,6 @@
 # Neil Artus – Software Engineer
 
-> Software Engineer specializing in Python backend systems, AI-powered applications, and Progressive Web Applications with production experience on Azure and bare-metal infrastructure.
+> Software Engineer specializing in backend systems, Agentic AI architectures, and cloud deployments. Experienced in building production microservices, full-stack web apps, and automated CI/CD pipelines across Azure and bare-metal environments.
 
 ## Contact & Links
 
@@ -17,28 +17,28 @@
 ## Skills Summary
 
 Languages: Python, Go, C#, JavaScript, TypeScript, SQL
-Web/Backend: FastAPI, Flask, React, Next.js, Vite, Tailwind CSS, .NET, Fiber
-Data: Cosmos DB, PostgreSQL, Qdrant, Microsoft SQL Server, SQLite, Pandas, Pydantic
-AI/ML: PyTorch, LangChain, Langsmith, Semantic Kernel, Google VertexAI, Pinecone, Azure Foundry, Azure OpenAI
-Cloud/DevOps: Azure DevOps, Docker, Firebase, Hetzner, Nginx, Gunicorn, Ubuntu, Windows Server 2022, Power Automate
+Web/Backend: FastAPI, Flask, React, Next.js, Vite, Tailwind CSS, .NET, Fiber, OpenTelemetry
+Data: Cosmos DB, PostgreSQL, Qdrant, Microsoft SQL Server, Entity Framework, SQLite, Pandas, Pydantic
+AI/ML: Azure OpenAI, Azure AI Foundry, LangChain, LangGraph, Semantic Kernel, Google Vertex AI, PyTorch, TensorFlow, RAG, Model Context Protocol (MCP)
+Cloud/DevOps: Azure DevOps, Docker, Firebase, Hetzner, Nginx, Gunicorn, Ubuntu Linux, Windows Server 2022, CI/CD
+Security/Tools: Microsoft Entra ID (Azure AD), Okta, RBAC, SonarQube, Black Duck, Coverity, Cloudflare, Git
 
 ## Experience Summary
 
-- **AI Engineer Intern at Emerson** (Mar 2026 – Jul 2026): AI agents, .NET 8, Azure DevOps CI/CD, MCP compliance
-- **Freelance Software Engineer at Albawani Co.** (Aug 2025 – Jan 2026): HR automation, Hetzner, Entra ID
-- **GenAI Research Intern at JG Summit Holdings Inc.** (Jun 2025 – Aug 2025): GenAI BI dashboard, LangChain, RAG
+- **AI Engineer Intern at Emerson** (Mar 2026 – Jul 2026): Azure AI Foundry Agents, MCP (Black Duck/OpenSSF/GitHub), sub-100ms p99 telemetry, .NET 8 DeltaV +30%, CI/CD -85%, Radix/TanStack/Recharts, Okta/Entra
+- **Freelance Software Engineer at Albawani Co.** (Aug 2025 – Jan 2026): HR automation for 10,000+ employees (-50%/cycle), Hetzner bare-metal, Entra ID RBAC
+- **AI Engineer Intern (GenAI Research) at JG Summit Holdings Inc.** (Jun 2025 – Aug 2025): BI dashboard Azure OpenAI/LangChain, Agentic RAG 12+ sources -70%, SQL/Pydantic 93%, handoff to 3 engineers in 3 days
 
 ## Projects
 
 - AGOS: https://agos-agentic.vercel.app | https://github.com/NeilR2s/agos
 - MediSeen: https://mediseen-2.vercel.app
-- Albawani HR Request Form: https://github.com/NeilR2s/albawani-request-form
+- Albawani HR Request Form
 - CNN-Osteo: https://github.com/NeilR2s/raspberry-pi-osteoarthritis-detection
 - AlerSense: https://alersense.vercel.app | https://github.com/NeilR2s/alersense
-- Bitbit: https://bitbit-marketplace.vercel.app | https://github.com/NeilR2s/cold-start-marketplace
 - Formal Language Compiler: https://dfa-visualizer-nr2s.vercel.app | https://github.com/NeilR2s/DFA-Visualizer
 
 ## Education
 
-De La Salle University – Dasmariñas | BS Computer Science, Intelligent Systems (AI) | GPA: 3.5/4.0
-Consistent Dean's Lister (2022–2025) | Leadership Awardee
+De La Salle University – Dasmariñas | BS Computer Science, Intelligent Systems (AI) | Magna Cum Laude, GPA 3.52/4.0, TOEIC 955/990
+CSPC Leadership Award | Dean's Honor List | Secretary & Codeyssey Program Head CSPC (1,000+ students)

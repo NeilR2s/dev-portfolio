@@ -3,6 +3,7 @@ User-agent: *
 Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /ai.txt
 Allow: /sitemap.xml
 
 # Sitemap
