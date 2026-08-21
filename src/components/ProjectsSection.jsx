@@ -22,14 +22,18 @@ export default function Projects({ portfolioData }) {
 
                         <img
                             src={project.preview}
-                            alt="Event cover"
-                            // className="relative z-20 aspect-video w-full object-cover"
+                            alt={`${project.title} preview`}
+                            width="640"
+                            height="360"
+                            loading={index < 2 ? "eager" : "lazy"}
+                            decoding="async"
+                            fetchPriority={index === 0 ? "high" : "auto"}
                             className="relative z-20 aspect-video w-full object-cover brightness-100 dark:brightness-40"
 
                         />
 
-                            <CardHeader className="pb-0.5 pt-6">
-                                <CardTitle className="text-xl">{project.title}</CardTitle>
+                        <CardHeader className="pb-0.5 pt-6">
+                            <CardTitle className="text-xl">{project.title}</CardTitle>
 
                             <CardDescription className="text-sm md:text-[15px] text-muted-foreground leading-relaxed">
                                 {project.summary}
@@ -52,22 +56,22 @@ export default function Projects({ portfolioData }) {
                             {project.githubLink ? (
                                 <Button variant="outline" size="sm" asChild>
                                     <a href={project.githubLink} target="_blank" rel="noreferrer">
+                                        <Github className="mr-0.5 size-4" />
                                         View Code
-                                        <Github className="ml-2 size-4" />
                                     </a>
                                 </Button>
                             ) : (
                                 <Button variant="outline" size="sm" disabled>
+                                    <Github className="mr-0.5 size-4" />
                                     Private
-                                    <Github className="ml-2 size-4" />
                                 </Button>
                             )}
 
                             {project.deploymentLink && (
                                 <Button variant="default" size="sm" asChild>
                                     <a href={project.deploymentLink} target="_blank" rel="noreferrer">
+                                        <ExternalLink className="mr-0.5 size-4" />
                                         Visit Site
-                                        <ExternalLink className="ml-2 size-4" />
                                     </a>
                                 </Button>
                             )}
@@ -75,8 +79,8 @@ export default function Projects({ portfolioData }) {
                             {project.infoLink && (
                                 <Button variant="default" size="sm" asChild>
                                     <a href={project.infoLink} target="_blank" rel="noreferrer">
+                                        <ExternalLink className="mr-0.5 size-4" />
                                         More Info
-                                        <ExternalLink className="ml-2 size-4" />
                                     </a>
                                 </Button>
                             )}

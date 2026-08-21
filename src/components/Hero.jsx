@@ -13,7 +13,7 @@ export default function Hero({ portfolioData }) {
     return (
         <section id="about" className="flex flex-col md:flex-row gap-8 md:gap-12 items-center justify-center space-x-6">
             <Avatar className="size-30 md:size-40 border-0 border-primary/10">
-                <AvatarImage class="isDarkable" src={personalInfo.iconBlack} alt={personalInfo.name} />
+                <AvatarImage class="isDarkable" src={personalInfo.iconBlack} alt={personalInfo.name} fetchPriority="high" />
                 <AvatarFallback className="text-4xl">
                     {personalInfo.name.split(' ').map(n => n[0]).join('')}
                 </AvatarFallback>
@@ -34,21 +34,21 @@ export default function Hero({ portfolioData }) {
                     <Button variant="outline" size="default" asChild className="rounded-full bg-card hover:bg-muted/50 border-muted">
                         <a href={`mailto:${personalInfo.email}`} target="_blank" rel="noreferrer">
                             <Mail className="size-4" />
-                            <span className="ml-2">{personalInfo.email}</span>
+                            <span className="ml-0.5">{personalInfo.email}</span>
                         </a>
                     </Button>
 
                     <Button variant="outline" size="default" asChild className="rounded-full bg-card hover:bg-muted/50 border-muted">
                         <a href={personalInfo.github} target="_blank" rel="noreferrer">
                             <Github className="size-4" />
-                            <span className="ml-2">GitHub</span>
+                            <span className="ml-0.5">GitHub</span>
                         </a>
                     </Button>
 
                     <Button variant="outline" size="default" asChild className="rounded-full bg-card hover:bg-muted/50 border-muted">
-                        <a href={personalInfo.linkedin}>
+                        <a href={personalInfo.linkedin} target="_blank" rel="noreferrer">
                             <Linkedin className="size-4" />
-                            <span className="ml-2">Linkedin</span>
+                            <span className="ml-0.5">Linkedin</span>
                         </a>
                     </Button>
 
