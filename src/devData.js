@@ -1,23 +1,22 @@
-import blackIcon from "./assets/neil-black-icon.png"
-import whiteIcon from "./assets/neil-white-icon.png"
-import agosScreenshot from "./assets/agos.png"
-import albawaniScreenshot from "./assets/albawani.png"
-import alersenseScreenshot from "./assets/alersense.png"
-import mediseenScreenshot from "./assets/mediseen.png"
-import osteoScreenshot from "./assets/osteo.jpeg"
-import dfaScreenshot from "./assets/dfacompiler.png"
-
 export const portfolioData = {
+    site: {
+        origin: "https://www.neilart.us",
+        updated: "2026-09-05",
+        title: "Neil Artus | Backend & AI Software Engineer",
+        tagline: "Backend systems. Applied AI. Cloud infrastructure.",
+        description: "Neil Artus builds distributed asynchronous backend systems, AI Agents, and enterprise cloud infrastructure. Explore engineering projects, experience at Emerson and JG Summit, and his resume.",
+        socialImage: "/social-preview.png",
+    },
+
     personalInfo: {
         name: "Neil Artus",
         email: "artus.neil.c@gmail.com",
-        summary: "Software Engineer specializing in backend systems, Agentic AI architectures, and cloud deployments. Experienced in building production microservices, full-stack web applications, and automated CI/CD pipelines across Azure and bare-metal environments. Proven background in delivering high-impact automation tools, secure API integrations, and low-latency data pipelines.",
+        role: "Backend & AI Software Engineer",
+        summary: "I build distributed backend systems, applied AI, and cloud infrastructure. My work spans enterprise automation at Emerson and JG Summit, streaming research agents, and embedded AI prototypes. I focus on the systems behind the interface: APIs, data pipelines, authentication, and deployment.",
         resumePath: "/Artus-Resume.pdf",
         github: "https://github.com/NeilR2s",
         linkedin: "https://www.linkedin.com/in/neil-artus-652115304",
-        avatar: "https://avatars.githubusercontent.com/u/147031843?s=400&u=067c4715586a2f79f241b60e7ace459a931c0915&v=4",
-        iconWhite: whiteIcon,
-        iconBlack: blackIcon
+        icon: "/images/neil-icon.png"
     },
     education: {
         institution: "De La Salle University - Dasmariñas",
@@ -32,7 +31,7 @@ export const portfolioData = {
             "Operating Systems",
             "Software Engineering"
         ],
-        extraCurriculars: "Secretary & Codeyssey Program Head – Computer Science Program Council (CSPC); managed technical workshops and hackathons for 1,000+ students",
+        extraCurriculars: "Secretary & Codeyssey Program Head, Computer Science Program Council (CSPC); organized technical workshops and hackathons",
         achievements: [
             "CSPC Leadership Award Recipient",
             "Dean's Honor List"
@@ -43,34 +42,25 @@ export const portfolioData = {
             company: "Emerson",
             role: "AI Engineer Intern",
             date: "March 2026 - July 2026",
+            startDate: "2026-03",
+            endDate: "2026-07",
             responsibilities: [
-                "Automated cybersecurity compliance workflows using Azure AI Foundry Agents, custom hardened Model Context Protocol (MCP) integrations (Black Duck, OpenSSF, GitHub), and multi-agent orchestration graphs, saving 1,600+ analyst hours and $85,000+ in operational expenses.",
-                "Built a real-time telemetry monitoring dashboard for AI agents and supply chain security metrics with sub-100ms p99 latency, establishing organizational secure development guidelines for MCP implementations.",
-                "Upgraded and deployed security hotfixes for Emerson DeltaV compliance software using .NET 8, accelerating vulnerability mitigation and report generation speeds by 30%.",
-                "Designed and maintained automated Azure DevOps CI/CD pipelines, reducing manual build and deployment cycles by 85%.",
-                "Refactored legacy design system UI components using React, Radix UI, TanStack Table, and Recharts.",
-                "Implemented enterprise authentication and access management using Okta, Microsoft Entra ID (Azure AD), and .NET middleware.",
-            ]
-        },
-        {
-            company: "Albawani Co.",
-            role: "Freelance Software Engineer",
-            date: "August 2025 - January 2026",
-            responsibilities: [
-                "Developed an internal HR automation application in Python that processes and generates attendance summary reports for 10,000+ employees, cutting manual reporting time by 50% per pay cycle.",
-                "Deployed and configured backend services on Hetzner bare-metal Linux servers, integrating directly with existing enterprise IT infrastructure.",
-                "Implemented secure authentication and Role-Based Access Control (RBAC) using Microsoft Entra ID to safeguard employee personal records."
+                "Developed AI-assisted cybersecurity compliance workflows, MCP integrations, and telemetry services for internal engineering teams.",
+                "Worked on .NET compliance reporting software, data access, and a React interface built with Radix UI.",
+                "Built Azure DevOps CI/CD pipelines with SonarQube, Black Duck, and Coverity checks, artifact publishing, and IIS deployment.",
+                "Implemented authentication and role-based access controls using ASP.NET Core, Okta, and Microsoft Entra ID.",
             ]
         },
         {
             company: "JG Summit Holdings Inc.",
             role: "AI Engineer Intern (GenAI Research)",
             date: "June 2025 - August 2025",
+            startDate: "2025-06",
+            endDate: "2025-08",
             responsibilities: [
-                "Developed and deployed a full-stack Business Intelligence dashboard using Azure OpenAI and LangChain, delivering automated financial reporting workflows to Treasury and Corporate Strategy teams.",
-                "Built an Agentic RAG (Retrieval-Augmented Generation) pipeline across 12+ enterprise data sources, decreasing manual financial analysis turnaround by 70%.",
-                "Engineered automated data validation pipelines using SQL and Pydantic, processing 500+ monthly data points with 93% validation accuracy.",
-                "Authored modular system architecture blueprints and technical documentation, enabling handoff and production deployment by 1 senior and 2 junior engineers within 3 days."
+                "Developed a financial research and reporting application with Flask, React, Azure OpenAI, and LangChain for treasury and corporate strategy workflows.",
+                "Built retrieval and document-processing workflows with source citations and structured data validation using Pydantic and SQL.",
+                "Documented service architecture, API integration, and deployment procedures for engineering handoff."
             ]
         }
     ],
@@ -133,77 +123,103 @@ export const portfolioData = {
     },
     projects: [
         {
-            title: "AGOS",
-            summary: "A multi-service market intelligence platform for Philippine financial data. Features data ingestion pipelines processing 350+ data points every 15 minutes for real-time stock forecasting, reducing ingestion latency by over 60%.",
+            id: "agos",
+            focus: "Market research infrastructure",
+            title: "AGOS: Agentic Philippine Market Intelligence Platform",
+            summary: "Philippine market research platform with a React interface, FastAPI services, and ingestion pipelines for market, economic, and news data.",
             technologies: [
-                "React",
-                "Vite",
                 "FastAPI",
                 "Python",
+                "DeepSeek",
+                "SSE",
                 "Cosmos DB",
                 "Firebase",
-                "Gemini API",
-                "LangGraph",
-                "Tavily",
-                "Chronos"
+                "SlowAPI",
+                "React"
             ],
-            impact: "Hardened microservices with Firebase JWT verification, parameterized Cosmos DB queries, and rate limiting. Engineered a stateful, streaming financial research agent using LangGraph and Gemini API with 5 custom tool registries and sub-second streaming latency.",
+            impact: "Concurrent research, portfolio, and risk workers stream responses through Server-Sent Events. The backend uses DeepSeek, while Gemini supports news ingestion. Cosmos DB stores research data; Firebase verification and rate limiting support API access control.",
             deploymentLink: "https://agos-agentic.vercel.app",
             githubLink: "https://github.com/NeilR2s/agos",
-            preview: agosScreenshot
+            infoLink: "https://github.com/NeilR2s/agos/blob/6712e42b3f34a3edae460aaedd52221ca61bc83e/README.md",
+            image: "agos",
+            alt: "AGOS landing page introducing its Philippine market research workspace"
         },
         {
-            title: "MediSeen",
-            summary: "An award-winning (1st place) Agentic AI progressive web application for clinical decision support, recognized at International Conference on Artificial Intelligence (ICAI 2026).",
-            impact: "Engineered Azure-based microservices with 98ms database query latency and 400ms average AI time-to-first-token latency. Developed responsive mobile viewport; increased system usability score by 15%. Hardened with middleware-level protections and Cloudflare DNS configuration.",
-            technologies: ["PyTorch", "Azure", "GCP", "React", "Tailwind", "FastAPI", "Cloudflare"],
+            id: "hr-automation",
+            focus: "Reporting workflows",
+            title: "Enterprise HR Automation Engine",
+            summary: "Python-based attendance reporting workflow with authenticated access to employee records.",
+            technologies: ["Python", "Hetzner", "Nginx", "Entra ID"],
+            impact: "Combines report automation, Linux-hosted backend services, and Microsoft Entra ID role-based access. Source code and internal implementation records are not publicly available.",
+            deploymentLink: null,
+            githubLink: null,
+            image: "albawani",
+            alt: "Attendance report portal sign-in screen"
+        },
+        {
+            id: "mediseen",
+            focus: "Applied AI prototype",
+            title: "MediSeen: Clinical Decision Support Platform",
+            summary: "Clinical decision-support research prototype with a web interface and streamed AI responses.",
+            impact: "Connects an AI-assisted interface to cloud-hosted backend services. This is a research prototype, not a substitute for professional medical assessment; source code is not publicly available.",
+            technologies: ["FastAPI", "React", "Azure", "Cloudflare", "Tailwind CSS", "SSE"],
             deploymentLink: "https://mediseen-2.vercel.app",
             githubLink: null,
-            preview: mediseenScreenshot
+            image: "mediseen",
+            alt: "MediSeen landing page introducing its clinical decision-support prototype"
         },
         {
-            title: "Albawani HR Request Form",
-            summary: "An attendance request form with role-based access control via Microsoft EntraID to simplify attendance report generation. Integrated the system with existing IT infrastructure on Hetzner bare-metal servers.",
-            technologies: ["Azure", "EntraID", "Flask", "Javascript", "TailwindCSS", "Hetzner"],
-            impact: "Simplified internal HR operations by developing an internal tool to automate employee attendance tracking for 10,000+ employees.",
-            deploymentLink: null,
-            githubLink: null,
-            preview: albawaniScreenshot
-        },
-        {
-            title: "CNN-Osteo",
-            summary: "Thermal imaging CNN for automated osteoarthritis detection using MobileNet and TensorFlow, deployed on Raspberry Pi 5 with real-time thermal diagnostics.",
-            impact: "Awarded 1st place at the Cavite Innovex 2025 Colloquium (COESCA Research of the Year). Trained on 2,236 medical images with 99.40% validation accuracy and 98.19% test accuracy.",
-            technologies: ["Python", "TensorFlow", "Numpy", "MobileNet", "Raspberry Pi"],
+            id: "cnn-osteo",
+            focus: "Embedded AI research",
+            title: "CNN-Osteo: Thermal-Image Screening Prototype",
+            summary: "Research prototype using TensorFlow and MobileNetV3Small to classify thermal knee images into osteoarthritis-related categories, with Raspberry Pi as the deployment target.",
+            impact: "The model card credits Neil with model training and inference, Joshua Lawrence C. Contreras with the UI, and Contreras, Hadji Luis L. Montealegre, and Francis G. Yaeso as the thesis researchers. Intended as a screening aid, not a standalone diagnostic tool; the model card documents limitations in generalizability.",
+            technologies: ["Python", "TensorFlow", "MobileNet", "Raspberry Pi", "NumPy"],
             deploymentLink: null,
             githubLink: "https://github.com/NeilR2s/raspberry-pi-osteoarthritis-detection",
-            infoLink: "https://www.facebook.com/share/p/1D5AdFLZzQ/",
-            preview: osteoScreenshot,
+            infoLink: "https://github.com/NeilR2s/raspberry-pi-osteoarthritis-detection/blob/60b145406b2995f1582db8183e3198a0053a9d7f/README.md",
+            image: "osteo",
+            alt: "Thermal image of knees shown in the CNN-Osteo research prototype",
         },
         {
-            title: "AlerSense",
-            summary: "An ESP32-based attention-monitoring system with a Python inference data hub, Flask-SocketIO API, and Next.js real-time alert dashboard.",
-            impact: "Implemented HTTP JSON telemetry ingestion for heart rate, SpO2, temperature, and related sensor metrics with real-time broadcast without page reloads.",
+            id: "alersense",
+            focus: "IoT telemetry prototype",
+            title: "AlerSense: Attention-Monitoring Prototype",
+            summary: "Demonstration prototype combining ESP32 telemetry, a Python video-inference component, a Flask-SocketIO API, and a Next.js dashboard.",
+            impact: "FreeRTOS queues separate sensor work from network transmission, with a drop-on-full policy. The API broadcasts telemetry to the dashboard.",
             technologies: [
                 "C++",
                 "ESP32",
-                "Flask",
+                "FreeRTOS",
+                "Flask-SocketIO",
                 "Next.js",
-                "Firebase",
-                "Azure",
             ],
             deploymentLink: "https://alersense.vercel.app",
             githubLink: "https://github.com/NeilR2s/alersense",
-            preview: alersenseScreenshot
+            infoLink: "https://github.com/NeilR2s/alersense/blob/9d94de561cac44c641d116819e108cb41acb0dd4/README.md",
+            image: "alersense",
+            alt: "AlerSense landing page showing its attention-monitoring demonstration"
         },
         {
-            title: "Formal Language Compiler",
-            summary: "Interactive web-based DFA simulator and compiler using TypeScript, Flask, and SVG rendering to model state transitions and formal grammar logic in real time.",
-            impact: "Decoupled automata simulation algorithms from API routing logic with pytest suites verifying strict compliance with formal language specifications.",
-            technologies: ["TypeScript", "Flask", "Python", "pytest"],
+            id: "dfa-visualizer",
+            focus: "Language tooling",
+            title: "DFA Visualizer: Formal Language Workbench",
+            summary: "Browser-based React and TypeScript workbench for DFA simulation (automata and formal languages), right-linear grammar derivation, and derived PDA simulation.",
+            impact: "Runs automata locally in TypeScript, with SVG visualizations and parity-check tooling against a Python reference implementation. The earlier Flask backend is archived and is not a dependency of the current browser runtime.",
+            technologies: ["TypeScript", "React", "SVG", "Python reference tooling"],
             deploymentLink: "https://dfa-visualizer-nr2s.vercel.app/",
             githubLink: "https://github.com/NeilR2s/DFA-Visualizer",
-            preview: dfaScreenshot
+            infoLink: "https://github.com/NeilR2s/DFA-Visualizer/blob/58ba6ea4b4bee5dc9e2e9d3ac46bf677eddc2ea5/README.md",
+            image: "dfacompiler",
+            alt: "DFA Visualizer workspace with state transitions and formal grammar controls"
         },
     ]
 };
+
+for (const project of portfolioData.projects) {
+    const widths = project.image === "osteo" ? [480, 800, 1280] : [480, 800, 1280, 1600]
+    project.preview = `/images/${project.image}-800.webp`
+    project.previewSources = widths.map((width) => `/images/${project.image}-${width}.webp ${width}w`).join(", ")
+    project.imageWidth = 800
+    project.imageHeight = project.image === "osteo" ? 447 : 450
+}
