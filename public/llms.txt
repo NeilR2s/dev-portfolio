@@ -1,44 +1,52 @@
-# Neil Artus – Software Engineer
+# Neil Artus - Backend & AI Software Engineer
 
-> Software Engineer specializing in backend systems, Agentic AI architectures, and cloud deployments. Experienced in building production microservices, full-stack web apps, and automated CI/CD pipelines across Azure and bare-metal environments.
+> I build distributed backend systems, applied AI, and cloud infrastructure. My work spans enterprise automation at Emerson and JG Summit, streaming research agents, and embedded AI prototypes. I focus on the systems behind the interface: APIs, data pipelines, authentication, and deployment.
 
-## Contact & Links
+Last updated: 2026-09-05. Biography and private-project descriptions are owner-provided. Public repository links document implementation details, not independently audited outcomes.
 
-- Email: artus.neil.c@gmail.com
-- Portfolio: https://nr2s.vercel.app
-- GitHub: https://github.com/NeilR2s
-- LinkedIn: https://www.linkedin.com/in/neil-artus-652115304
-- Resume: https://nr2s.vercel.app/Artus-Resume.pdf
+## Contact and links
 
-## Full Context
+- [Portfolio](https://www.neilart.us/)
+- [PDF resume](https://www.neilart.us/Artus-Resume.pdf)
+- [GitHub](https://github.com/NeilR2s)
+- [LinkedIn](https://www.linkedin.com/in/neil-artus-652115304)
+- [Email Neil Artus](mailto:artus.neil.c@gmail.com)
+- [Full portfolio context](https://www.neilart.us/llms-full.txt)
 
-- Full Details: https://nr2s.vercel.app/llms-full.txt
+## Experience
 
-## Skills Summary
-
-Languages: Python, Go, C#, JavaScript, TypeScript, SQL
-Web/Backend: FastAPI, Flask, React, Next.js, Vite, Tailwind CSS, .NET, Fiber, OpenTelemetry
-Data: Cosmos DB, PostgreSQL, Qdrant, Microsoft SQL Server, Entity Framework, SQLite, Pandas, Pydantic
-AI/ML: Azure OpenAI, Azure AI Foundry, LangChain, LangGraph, Semantic Kernel, Google Vertex AI, PyTorch, TensorFlow, RAG, Model Context Protocol (MCP)
-Cloud/DevOps: Azure DevOps, Docker, Firebase, Hetzner, Nginx, Gunicorn, Ubuntu Linux, Windows Server 2022, CI/CD
-Security/Tools: Microsoft Entra ID (Azure AD), Okta, RBAC, SonarQube, Black Duck, Coverity, Cloudflare, Git
-
-## Experience Summary
-
-- **AI Engineer Intern at Emerson** (Mar 2026 – Jul 2026): Azure AI Foundry Agents, MCP (Black Duck/OpenSSF/GitHub), sub-100ms p99 telemetry, .NET 8 DeltaV +30%, CI/CD -85%, Radix/TanStack/Recharts, Okta/Entra
-- **Freelance Software Engineer at Albawani Co.** (Aug 2025 – Jan 2026): HR automation for 10,000+ employees (-50%/cycle), Hetzner bare-metal, Entra ID RBAC
-- **AI Engineer Intern (GenAI Research) at JG Summit Holdings Inc.** (Jun 2025 – Aug 2025): BI dashboard Azure OpenAI/LangChain, Agentic RAG 12+ sources -70%, SQL/Pydantic 93%, handoff to 3 engineers in 3 days
+- **AI Engineer Intern, Emerson** (March 2026 - July 2026): Developed AI-assisted cybersecurity compliance workflows, MCP integrations, and telemetry services for internal engineering teams.
+- **AI Engineer Intern (GenAI Research), JG Summit Holdings Inc.** (June 2025 - August 2025): Developed a financial research and reporting application with Flask, React, Azure OpenAI, and LangChain for treasury and corporate strategy workflows.
 
 ## Projects
 
-- AGOS: https://agos-agentic.vercel.app | https://github.com/NeilR2s/agos
-- MediSeen: https://mediseen-2.vercel.app
-- Albawani HR Request Form
-- CNN-Osteo: https://github.com/NeilR2s/raspberry-pi-osteoarthritis-detection
-- AlerSense: https://alersense.vercel.app | https://github.com/NeilR2s/alersense
-- Formal Language Compiler: https://dfa-visualizer-nr2s.vercel.app | https://github.com/NeilR2s/DFA-Visualizer
+- [AGOS: Agentic Philippine Market Intelligence Platform](https://www.neilart.us/#agos): Philippine market research platform with a React interface, FastAPI services, and ingestion pipelines for market, economic, and news data.
+- [Enterprise HR Automation Engine](https://www.neilart.us/#hr-automation): Python-based attendance reporting workflow with authenticated access to employee records.
+- [MediSeen: Clinical Decision Support Platform](https://www.neilart.us/#mediseen): Clinical decision-support research prototype with a web interface and streamed AI responses.
+- [CNN-Osteo: Thermal-Image Screening Prototype](https://www.neilart.us/#cnn-osteo): Research prototype using TensorFlow and MobileNetV3Small to classify thermal knee images into osteoarthritis-related categories, with Raspberry Pi as the deployment target.
+- [AlerSense: Attention-Monitoring Prototype](https://www.neilart.us/#alersense): Demonstration prototype combining ESP32 telemetry, a Python video-inference component, a Flask-SocketIO API, and a Next.js dashboard.
+- [DFA Visualizer: Formal Language Workbench](https://www.neilart.us/#dfa-visualizer): Browser-based React and TypeScript workbench for DFA simulation (automata and formal languages), right-linear grammar derivation, and derived PDA simulation.
+
+## Skills
+
+- **Languages:** Python, Go, C#, JavaScript, TypeScript, SQL
+- **Frameworks:** .NET, FastAPI, Flask, React, Next.js, Vite, Tailwind CSS, Fiber, OpenTelemetry
+- **Data and databases:** Cosmos DB, PostgreSQL, Qdrant, Microsoft SQL Server, Entity Framework, SQLite, Pandas, Pydantic
+- **AI and ML:** Azure OpenAI, Azure AI Foundry, LangChain, LangGraph, Semantic Kernel, Google Vertex AI, PyTorch, TensorFlow, Retrieval-Augmented Generation (RAG), Model Context Protocol (MCP)
+- **Cloud and DevOps:** Azure DevOps, Docker, Firebase, Hetzner, Nginx, Gunicorn, Ubuntu Linux, Windows Server 2022, CI/CD
+- **Security and tools:** Microsoft Entra ID (Azure AD), Okta, Role-Based Access Control (RBAC), SonarQube, Black Duck, Coverity, Cloudflare, Git
 
 ## Education
 
-De La Salle University – Dasmariñas | BS Computer Science, Intelligent Systems (AI) | Magna Cum Laude, GPA 3.52/4.0, TOEIC 955/990
-CSPC Leadership Award | Dean's Honor List | Secretary & Codeyssey Program Head CSPC (1,000+ students)
+De La Salle University - Dasmariñas
+
+Bachelor of Science in Computer Science with Specialization in Intelligent Systems (AI)
+
+Magna Cum Laude | GPA 3.52/4.0 | TOEIC 955/990
+
+Secretary & Codeyssey Program Head, Computer Science Program Council (CSPC); organized technical workshops and hackathons
+
+- CSPC Leadership Award Recipient
+- Dean's Honor List
+
+Coursework: Data Structures & Algorithms, Machine Learning, Database Systems, Web Development, Computer Networks, Operating Systems, Software Engineering

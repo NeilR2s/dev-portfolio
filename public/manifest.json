@@ -1,1 +1,26 @@
-{"name":"Neil Artus — Software Engineer","short_name":"nr2s","description":"Portfolio of Neil Artus – Software Engineer specializing in backend systems, Agentic AI, and cloud deployments","start_url":"/","scope":"/","id":"/","display":"standalone","display_override":["window-controls-overlay","standalone"],"orientation":"any","dir":"auto","lang":"en-US","theme_color":"#ffffff","background_color":"#ffffff","categories":["developer","portfolio","technology"],"icons":[{"src":"icon512_maskable.png","sizes":"512x512","type":"image/png","purpose":"maskable"},{"src":"icon512_rounded.png","sizes":"512x512","type":"image/png","purpose":"any"}]}
+{
+  "name": "Neil Artus - Backend & AI Software Engineer",
+  "short_name": "Neil Artus",
+  "description": "Neil Artus builds distributed asynchronous backend systems, AI Agents, and enterprise cloud infrastructure. Explore engineering projects, experience at Emerson and JG Summit, and his resume.",
+  "start_url": "/",
+  "scope": "/",
+  "id": "/",
+  "display": "browser",
+  "lang": "en",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/icon512_maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon512_rounded.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

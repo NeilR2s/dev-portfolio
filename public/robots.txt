@@ -1,14 +1,4 @@
-# https://nr2s.vercel.app - Neil Artus Portfolio
 User-agent: *
 Allow: /
-Allow: /llms.txt
-Allow: /llms-full.txt
-Allow: /ai.txt
-Allow: /sitemap.xml
 
-# Sitemap
-Sitemap: https://nr2s.vercel.app/sitemap.xml
-
-# AI Agents & LLMs
-# For AI agents, see /llms.txt for structured context
-# For full context, see /llms-full.txt
+Sitemap: https://www.neilart.us/sitemap.xml

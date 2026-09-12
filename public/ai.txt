@@ -1,29 +1,12 @@
-# AI Context File for nr2s.vercel.app
-# This file helps AI agents understand the content and purpose of this website.
+# Neil Artus Portfolio
 
-## Site Information
-- Site Name: Neil Artus Portfolio
-- Site URL: https://nr2s.vercel.app
-- Site Type: Personal Developer Portfolio
-- Owner: Neil Artus
-- Contact: artus.neil.c@gmail.com
+I build distributed backend systems, applied AI, and cloud infrastructure. My work spans enterprise automation at Emerson and JG Summit, streaming research agents, and embedded AI prototypes. I focus on the systems behind the interface: APIs, data pipelines, authentication, and deployment.
 
-## What This Site Contains
-This is the personal portfolio of Neil Artus, a Software Engineer specializing in backend systems, Agentic AI architectures, and cloud deployments across Azure and bare-metal infrastructure. Focus areas include production microservices, secure API integrations, and low-latency data pipelines.
+Last updated: 2026-09-05.
 
-## Structured Data Available
-- JSON-LD Schema.org markup (Person, WebSite, BreadcrumbList, ItemList, SoftwareSourceCode) in HTML
-- LLM-optimized content at /llms.txt (summary) and /llms-full.txt (full details)
-- Resume PDF at /Artus-Resume.pdf
-- Sitemap at /sitemap.xml
+- [Canonical portfolio](https://www.neilart.us/)
+- [Portfolio summary](https://www.neilart.us/llms.txt)
+- [Full portfolio context and source links](https://www.neilart.us/llms-full.txt)
+- [PDF resume](https://www.neilart.us/Artus-Resume.pdf)
 
-## Key Topics Covered
-- Professional experience: Emerson (AI Engineer Intern, Azure AI Foundry/MCP), Albawani (HR automation), JG Summit (GenAI Research, Agentic RAG)
-- AI/ML: Azure OpenAI, Azure AI Foundry, LangChain, LangGraph, Semantic Kernel, Vertex AI, PyTorch, TensorFlow, RAG, MCP
-- Web/Backend: React, FastAPI, .NET, Flask, Fiber, OpenTelemetry, Radix UI, TanStack Table
-- Data: Cosmos DB, PostgreSQL, Qdrant, SQL Server, Entity Framework, Pydantic
-- Cloud/DevOps/Security: Azure DevOps, Docker, Hetzner, Nginx, Okta, Entra ID, SonarQube, Black Duck, Coverity, Cloudflare
-- Projects: AGOS, MediSeen, CNN-Osteo, AlerSense, DFA Compiler, Albawani HR
-
-## Preferred Citation
-Neil Artus – Software Engineer | https://nr2s.vercel.app
+These documents are generated from the same content as the website. Public repository descriptions are not independently verified performance or clinical claims.

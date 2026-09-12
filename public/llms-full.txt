@@ -1,113 +1,132 @@
-# Neil Artus – Software Engineer (Full Context)
+# Neil Artus - Backend & AI Software Engineer
 
-> Software Engineer specializing in backend systems, Agentic AI architectures, and cloud deployments. Experienced in building production microservices, full-stack web applications, and automated CI/CD pipelines across Azure and bare-metal environments. Proven background in delivering high-impact automation tools, secure API integrations, and low-latency data pipelines.
+> I build distributed backend systems, applied AI, and cloud infrastructure. My work spans enterprise automation at Emerson and JG Summit, streaming research agents, and embedded AI prototypes. I focus on the systems behind the interface: APIs, data pipelines, authentication, and deployment.
 
-## Contact & Links
+Last updated: 2026-09-05. Biography and private-project descriptions are owner-provided. Public repository links document implementation details, not independently audited outcomes.
 
-- Name: Neil Artus
-- Email: artus.neil.c@gmail.com
-- Portfolio: https://nr2s.vercel.app
-- GitHub: https://github.com/NeilR2s
-- LinkedIn: https://www.linkedin.com/in/neil-artus-652115304
-- Resume (PDF): https://nr2s.vercel.app/Artus-Resume.pdf
+## Contact and links
 
----
-
-## Skills
-
-**Languages:** Python, Go, C#, JavaScript, TypeScript, SQL
-**Web and Backend:** FastAPI, Flask, React, Next.js, Vite, Tailwind CSS, .NET, Fiber, OpenTelemetry
-**Data and Databases:** Cosmos DB, PostgreSQL, Qdrant, Microsoft SQL Server, Entity Framework, SQLite, Pandas, Pydantic
-**AI and ML:** Azure OpenAI, Azure AI Foundry, LangChain, LangGraph, Semantic Kernel, Google Vertex AI, PyTorch, TensorFlow, Retrieval-Augmented Generation (RAG), Model Context Protocol (MCP)
-**Cloud and DevOps:** Azure DevOps, Docker, Firebase, Hetzner, Nginx, Gunicorn, Ubuntu Linux, Windows Server 2022, CI/CD
-**Cybersecurity & Tools:** Microsoft Entra ID (Azure AD), Okta, Role-Based Access Control (RBAC), SonarQube, Black Duck, Coverity, Cloudflare, Git
-
----
+- [Portfolio](https://www.neilart.us/)
+- [PDF resume](https://www.neilart.us/Artus-Resume.pdf)
+- [GitHub](https://github.com/NeilR2s)
+- [LinkedIn](https://www.linkedin.com/in/neil-artus-652115304)
+- [Email Neil Artus](mailto:artus.neil.c@gmail.com)
 
 ## Experience
 
-### AI Engineer Intern, Emerson – Metro Manila (Mar 2026 – Jul 2026)
+### AI Engineer Intern, Emerson
 
-- Automated cybersecurity compliance workflows using Azure AI Foundry Agents, custom hardened Model Context Protocol (MCP) integrations (Black Duck, OpenSSF, GitHub), and multi-agent orchestration graphs, saving 1,600+ analyst hours and $85,000+ in operational expenses.
-- Built a real-time telemetry monitoring dashboard for AI agents and supply chain security metrics with sub-100ms p99 latency, establishing organizational secure development guidelines for MCP implementations.
-- Upgraded and deployed security hotfixes for Emerson DeltaV compliance software using .NET 8, accelerating vulnerability mitigation and report generation speeds by 30%.
-- Designed and maintained automated Azure DevOps CI/CD pipelines, reducing manual build and deployment cycles by 85%.
-- Refactored legacy design system UI components using React, Radix UI, TanStack Table, and Recharts.
-- Implemented enterprise authentication and access management using Okta, Microsoft Entra ID (Azure AD), and .NET middleware.
+March 2026 - July 2026
 
-### Freelance Software Engineer, Albawani Co. – Remote (Aug 2025 – Jan 2026)
+- Developed AI-assisted cybersecurity compliance workflows, MCP integrations, and telemetry services for internal engineering teams.
+- Worked on .NET compliance reporting software, data access, and a React interface built with Radix UI.
+- Built Azure DevOps CI/CD pipelines with SonarQube, Black Duck, and Coverity checks, artifact publishing, and IIS deployment.
+- Implemented authentication and role-based access controls using ASP.NET Core, Okta, and Microsoft Entra ID.
 
-- Developed an internal HR automation application in Python that processes and generates attendance summary reports for 10,000+ employees, cutting manual reporting time by 50% per pay cycle.
-- Deployed and configured backend services on Hetzner bare-metal Linux servers, integrating directly with existing enterprise IT infrastructure.
-- Implemented secure authentication and Role-Based Access Control (RBAC) using Microsoft Entra ID to safeguard employee personal records.
+### AI Engineer Intern (GenAI Research), JG Summit Holdings Inc.
 
-### AI Engineer Intern (GenAI Research), JG Summit Holdings Inc. – Metro Manila (Jun 2025 – Aug 2025)
+June 2025 - August 2025
 
-- Developed and deployed a full-stack Business Intelligence dashboard using Azure OpenAI and LangChain, delivering automated financial reporting workflows to Treasury and Corporate Strategy teams.
-- Built an Agentic RAG (Retrieval-Augmented Generation) pipeline across 12+ enterprise data sources, decreasing manual financial analysis turnaround by 70%.
-- Engineered automated data validation pipelines using SQL and Pydantic, processing 500+ monthly data points with 93% validation accuracy.
-- Authored modular system architecture blueprints and technical documentation, enabling handoff and production deployment by 1 senior and 2 junior engineers within 3 days.
-
----
+- Developed a financial research and reporting application with Flask, React, Azure OpenAI, and LangChain for treasury and corporate strategy workflows.
+- Built retrieval and document-processing workflows with source citations and structured data validation using Pydantic and SQL.
+- Documented service architecture, API integration, and deployment procedures for engineering handoff.
 
 ## Projects
 
 ### AGOS: Agentic Philippine Market Intelligence Platform
-- Role: Full-Stack Developer
-- Live: https://agos-agentic.vercel.app
-- Source: https://github.com/NeilR2s/agos
-- Tech: React, Vite, FastAPI, Python, Cosmos DB, Firebase, Gemini API, LangGraph, Tavily, Chronos
-- Architected a multi-service market intelligence platform processing 350+ data points every 15 minutes for real-time stock forecasting, reducing ingestion latency by over 60%.
-- Hardened microservices using FastAPI dependency injection for server-side Firebase JWT verification, parameterized Cosmos DB queries, and route-specific rate limiting via SlowAPI.
-- Engineered a stateful, streaming financial research agent using LangGraph and the Gemini API, orchestrating 5 custom tool registries with sub-second streaming latency.
 
-### MediSeen
-- Role: Full-Stack Developer
-- Live: https://mediseen-2.vercel.app
-- Tech: PyTorch, Azure, GCP, React, Tailwind, FastAPI, Cloudflare
-- Led development of an Agentic AI progressive web application for clinical decision support, winning 1st Place at the International Conference on Artificial Intelligence (ICAI 2026).
-- Engineered cloud microservices on Azure, achieving 98ms average database query latency and 400ms time-to-first-token AI inference latency.
-- Built a mobile-responsive interface using Tailwind CSS, improving measured System Usability Scale (SUS) scores by 15%.
-- Configured security middleware protections, API routing policies, and Cloudflare DNS caching and SSL/TLS termination.
+Philippine market research platform with a React interface, FastAPI services, and ingestion pipelines for market, economic, and news data.
 
-### Albawani HR Request Form
-- Role: Freelance Software Engineer
-- Tech: Azure, EntraID, Flask, JavaScript, TailwindCSS, Hetzner
-- An attendance request form with role-based access control via Microsoft EntraID.
-- Simplified internal HR operations by automating employee attendance tracking for 10,000+ employees.
+Concurrent research, portfolio, and risk workers stream responses through Server-Sent Events. The backend uses DeepSeek, while Gemini supports news ingestion. Cosmos DB stores research data; Firebase verification and rate limiting support API access control.
 
-### CNN-Osteo (Thermal Camera Osteoarthritis Detector)
-- Role: Embedded AI Engineer
-- Source: https://github.com/NeilR2s/raspberry-pi-osteoarthritis-detection
-- Info: https://www.facebook.com/share/p/1D5AdFLZzQ/
-- Tech: Python, TensorFlow, NumPy, MobileNet, Raspberry Pi
-- Coordinated cross-functional development of a CNN based on MobileNet and TensorFlow for automated osteoarthritis detection, deployed on Raspberry Pi 5 with thermal camera for real-time diagnostics.
-- Awarded 1st place at the Cavite Innovex 2025 Colloquium (COESCA Research of the Year).
-- 99.40% validation accuracy and 98.19% test accuracy on 2,236 medical images.
+- Focus: Market research infrastructure
+- Stack: FastAPI, Python, DeepSeek, SSE, Cosmos DB, Firebase, SlowAPI, React
+- [Portfolio entry](https://www.neilart.us/#agos)
+- [Live site](https://agos-agentic.vercel.app)
+- [Source code](https://github.com/NeilR2s/agos)
+- [Technical documentation, inspected revision](https://github.com/NeilR2s/agos/blob/6712e42b3f34a3edae460aaedd52221ca61bc83e/README.md)
 
-### AlerSense
-- Role: Full-Stack Engineer
-- Live: https://alersense.vercel.app
-- Source: https://github.com/NeilR2s/alersense
-- Tech: C++, ESP32, Flask, Next.js, Firebase, Azure
-- Built an ESP32-based attention-monitoring system with a Python inference data hub, Flask-SocketIO API, and Next.js real-time alert dashboard.
-- Implemented HTTP JSON telemetry ingestion for heart rate, SpO2, temperature, and related sensor metrics with real-time broadcast without page reloads.
+### Enterprise HR Automation Engine
 
-### Formal Language Compiler (DFA Visualizer)
-- Role: Full-Stack Developer
-- Live: https://dfa-visualizer-nr2s.vercel.app
-- Source: https://github.com/NeilR2s/DFA-Visualizer
-- Tech: TypeScript, Flask, Python, pytest
-- Developed an interactive web-based DFA simulator and compiler using TypeScript, Flask, and SVG rendering to model state transitions and formal grammar logic in real time.
-- Decoupled automata simulation algorithms from API routing logic, implementing test suites with pytest to verify strict compliance with formal language specifications.
+Python-based attendance reporting workflow with authenticated access to employee records.
 
----
+Combines report automation, Linux-hosted backend services, and Microsoft Entra ID role-based access. Source code and internal implementation records are not publicly available.
+
+- Focus: Reporting workflows
+- Stack: Python, Hetzner, Nginx, Entra ID
+- [Portfolio entry](https://www.neilart.us/#hr-automation)
+- Source not published
+
+### MediSeen: Clinical Decision Support Platform
+
+Clinical decision-support research prototype with a web interface and streamed AI responses.
+
+Connects an AI-assisted interface to cloud-hosted backend services. This is a research prototype, not a substitute for professional medical assessment; source code is not publicly available.
+
+- Focus: Applied AI prototype
+- Stack: FastAPI, React, Azure, Cloudflare, Tailwind CSS, SSE
+- [Portfolio entry](https://www.neilart.us/#mediseen)
+- [Live site](https://mediseen-2.vercel.app)
+- Source not published
+
+### CNN-Osteo: Thermal-Image Screening Prototype
+
+Research prototype using TensorFlow and MobileNetV3Small to classify thermal knee images into osteoarthritis-related categories, with Raspberry Pi as the deployment target.
+
+The model card credits Neil with model training and inference, Joshua Lawrence C. Contreras with the UI, and Contreras, Hadji Luis L. Montealegre, and Francis G. Yaeso as the thesis researchers. Intended as a screening aid, not a standalone diagnostic tool; the model card documents limitations in generalizability.
+
+- Focus: Embedded AI research
+- Stack: Python, TensorFlow, MobileNet, Raspberry Pi, NumPy
+- [Portfolio entry](https://www.neilart.us/#cnn-osteo)
+- [Source code](https://github.com/NeilR2s/raspberry-pi-osteoarthritis-detection)
+- [Technical documentation, inspected revision](https://github.com/NeilR2s/raspberry-pi-osteoarthritis-detection/blob/60b145406b2995f1582db8183e3198a0053a9d7f/README.md)
+
+### AlerSense: Attention-Monitoring Prototype
+
+Demonstration prototype combining ESP32 telemetry, a Python video-inference component, a Flask-SocketIO API, and a Next.js dashboard.
+
+FreeRTOS queues separate sensor work from network transmission, with a drop-on-full policy. The API broadcasts telemetry to the dashboard.
+
+- Focus: IoT telemetry prototype
+- Stack: C++, ESP32, FreeRTOS, Flask-SocketIO, Next.js
+- [Portfolio entry](https://www.neilart.us/#alersense)
+- [Live site](https://alersense.vercel.app)
+- [Source code](https://github.com/NeilR2s/alersense)
+- [Technical documentation, inspected revision](https://github.com/NeilR2s/alersense/blob/9d94de561cac44c641d116819e108cb41acb0dd4/README.md)
+
+### DFA Visualizer: Formal Language Workbench
+
+Browser-based React and TypeScript workbench for DFA simulation (automata and formal languages), right-linear grammar derivation, and derived PDA simulation.
+
+Runs automata locally in TypeScript, with SVG visualizations and parity-check tooling against a Python reference implementation. The earlier Flask backend is archived and is not a dependency of the current browser runtime.
+
+- Focus: Language tooling
+- Stack: TypeScript, React, SVG, Python reference tooling
+- [Portfolio entry](https://www.neilart.us/#dfa-visualizer)
+- [Live site](https://dfa-visualizer-nr2s.vercel.app/)
+- [Source code](https://github.com/NeilR2s/DFA-Visualizer)
+- [Technical documentation, inspected revision](https://github.com/NeilR2s/DFA-Visualizer/blob/58ba6ea4b4bee5dc9e2e9d3ac46bf677eddc2ea5/README.md)
+
+## Skills
+
+- **Languages:** Python, Go, C#, JavaScript, TypeScript, SQL
+- **Frameworks:** .NET, FastAPI, Flask, React, Next.js, Vite, Tailwind CSS, Fiber, OpenTelemetry
+- **Data and databases:** Cosmos DB, PostgreSQL, Qdrant, Microsoft SQL Server, Entity Framework, SQLite, Pandas, Pydantic
+- **AI and ML:** Azure OpenAI, Azure AI Foundry, LangChain, LangGraph, Semantic Kernel, Google Vertex AI, PyTorch, TensorFlow, Retrieval-Augmented Generation (RAG), Model Context Protocol (MCP)
+- **Cloud and DevOps:** Azure DevOps, Docker, Firebase, Hetzner, Nginx, Gunicorn, Ubuntu Linux, Windows Server 2022, CI/CD
+- **Security and tools:** Microsoft Entra ID (Azure AD), Okta, Role-Based Access Control (RBAC), SonarQube, Black Duck, Coverity, Cloudflare, Git
 
 ## Education
 
-**De La Salle University – Dasmariñas**
-- Degree: Bachelor of Science in Computer Science with Specialization in Intelligent Systems (AI)
-- Honors: Magna Cum Laude | GPA 3.52/4.0 | TOEIC 955/990
-- Relevant Coursework: Data Structures & Algorithms, Machine Learning, Database Systems, Web Development, Computer Networks, Operating Systems, Software Engineering
-- Extra-Curriculars: Secretary & Codeyssey Program Head – Computer Science Program Council (CSPC); managed technical workshops and hackathons for 1,000+ students
-- Awards: CSPC Leadership Award Recipient, Dean's Honor List
+De La Salle University - Dasmariñas
+
+Bachelor of Science in Computer Science with Specialization in Intelligent Systems (AI)
+
+Magna Cum Laude | GPA 3.52/4.0 | TOEIC 955/990
+
+Secretary & Codeyssey Program Head, Computer Science Program Council (CSPC); organized technical workshops and hackathons
+
+- CSPC Leadership Award Recipient
+- Dean's Honor List
+
+Coursework: Data Structures & Algorithms, Machine Learning, Database Systems, Web Development, Computer Networks, Operating Systems, Software Engineering
