@@ -1,14 +1,7 @@
-import { SectionHeader } from "./Typography";
-import {
-    Card,
-    CardContent,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
-import { Badge } from "./ui/badge";
+import { SectionHeader } from "./Typography"
 
 export default function Skills({ portfolioData }) {
-    const { languages, frameworks, data, aiMl, cloudTools } = portfolioData.skills;
+    const { languages, frameworks, data, aiMl, cloudTools, securityTools } = portfolioData.skills
 
     const skillCategories = [
         { title: "Languages", items: languages },
@@ -16,27 +9,22 @@ export default function Skills({ portfolioData }) {
         { title: "Data & Databases", items: data },
         { title: "AI & ML", items: aiMl },
         { title: "Cloud & DevOps", items: cloudTools },
-    ];
+        { title: "Security & Tooling", items: securityTools },
+    ]
 
     return (
-        <section id="skills" className="space-y-6">
-            <SectionHeader title="Skills" />
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {skillCategories.map((category, index) => (
-                    <Card key={index} className="bg-card/50 border border-muted/50 hover:border-primary/10 transition-colors shadow-sm">
-                        <CardHeader>
-                            <CardTitle className="text-lg">{category.title}</CardTitle>
-                        </CardHeader>
-                        <CardContent className="flex flex-wrap gap-2">
-                            {category.items.map((skill, i) => (
-                                <Badge variant="secondary" key={i} className="text-xs">
-                                    {skill}
-                                </Badge>
-                            ))}
-                        </CardContent>
-                    </Card>
-                ))}
+        <section id="skills" aria-labelledby="skills-heading">
+            <div className="mx-auto max-w-[1400px] space-y-10 px-5 py-12 sm:px-6 lg:px-8">
+                <SectionHeader id="skills-heading" eyebrow="Technical toolkit" title="Skills" />
+                <dl className="grid gap-x-10 gap-y-6 md:grid-cols-2 xl:grid-cols-3">
+                    {skillCategories.map((category) => (
+                        <div key={category.title} className="border-t border-hairline pt-4">
+                            <dt className="text-body-md font-bold text-ink">{category.title}</dt>
+                            <dd className="mt-3 font-serif text-body-serif-md text-ink">{category.items.join(", ")}</dd>
+                        </div>
+                    ))}
+                </dl>
             </div>
         </section>
-    );
+    )
 }

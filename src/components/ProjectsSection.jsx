@@ -1,94 +1,97 @@
-import { SectionHeader } from "./Typography";
-import {
-    Card,
-    CardContent,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-    CardDescription,
-} from "@/components/ui/card"
-import { Badge } from "./ui/badge";
-import { Button } from "./ui/button";
-import { Github, ExternalLink, Image as ImageIcon } from "lucide-react";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { ArrowUpRight, Github } from "lucide-react"
 
-export default function Projects({ portfolioData }) {
+import { Button } from "./ui/button"
+import { SectionHeader } from "./Typography"
+
+function ProjectMeta({ project }) {
     return (
-        <section id="projects" className="space-y-4">
-            <SectionHeader title="Projects" />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {portfolioData.projects.map((project, index) => (
-                    <Card key={index} className="flex flex-col overflow-hidden border border-muted/60 h-full">
+        <p className="text-body-sm leading-relaxed text-ink-soft">
+            <span className="font-bold text-ink">Stack</span> / {project.technologies.join(" / ")}
+        </p>
+    )
+}
 
-                        <img
-                            src={project.preview}
-                            alt={`${project.title} preview`}
-                            width="640"
-                            height="360"
-                            loading={index < 2 ? "eager" : "lazy"}
-                            decoding="async"
-                            fetchPriority={index === 0 ? "high" : "auto"}
-                            className="relative z-20 aspect-video w-full object-cover brightness-100 dark:brightness-40"
+function ProjectActions({ project, featured = false }) {
+    const links = [
+        project.deploymentLink && { href: project.deploymentLink, label: "Live site", icon: <ArrowUpRight className="size-4" aria-hidden="true" /> },
+        project.githubLink && { href: project.githubLink, label: "View source", icon: <Github className="size-4" aria-hidden="true" /> },
+        project.infoLink && { href: project.infoLink, label: "Technical documentation", icon: <ArrowUpRight className="size-4" aria-hidden="true" /> },
+    ].filter(Boolean)
 
-                        />
+    return (
+        <div className="flex flex-wrap items-center gap-3">
+            {!project.githubLink && (
+                <span className="text-body-sm text-ink-soft">Source not published</span>
+            )}
+            {links.map(({ href, label, icon }, index) => (
+                <Button key={label} variant={featured && index === 0 ? "default" : "outline"} size="sm" asChild className="rounded-none">
+                    <a href={href} target="_blank" rel="noreferrer" aria-label={`${label} for ${project.title} (opens in a new tab)`}>
+                        {label}
+                        {icon}
+                        <span className="sr-only"> (opens in a new tab)</span>
+                    </a>
+                </Button>
+            ))}
+        </div>
+    )
+}
 
-                        <CardHeader className="pb-0.5 pt-6">
-                            <CardTitle className="text-xl">{project.title}</CardTitle>
+export default function Projects({ portfolioData, textOnly = false }) {
+    const projects = portfolioData.projects
 
-                            <CardDescription className="text-sm md:text-[15px] text-muted-foreground leading-relaxed">
-                                {project.summary}
-                            </CardDescription>
-                        </CardHeader>
+    return (
+        <section id="projects" aria-labelledby="projects-heading">
+            <div className="mx-auto max-w-350 space-y-8 px-5 py-12 sm:px-6 lg:px-8">
+                <SectionHeader id="projects-heading" eyebrow="Selected work" title="Projects" />
 
-                        <CardContent className="flex-grow space-y-6 pt-4">
-                            <div className="flex flex-wrap gap-2">
-                                {project.technologies.map((tech, i) => (
-                                    <Badge variant="secondary" key={i} className="text-xs">
-                                        {tech}
-                                    </Badge>
-                                ))}
-                            </div>
-                        </CardContent>
+                <ul className={textOnly ? "space-y-8" : "grid gap-x-8 gap-y-10 md:grid-cols-2"}>
+                    {projects.map((project, index) => {
+                        const isLead = !textOnly && index === 0
+                        const isStory = !textOnly && index > 2
+                        const sizes = isLead
+                            ? "(min-width: 1400px) 1336px, (min-width: 1024px) calc(100vw - 64px), (min-width: 640px) calc(100vw - 48px), calc(100vw - 40px)"
+                            : isStory
+                                ? "(min-width: 768px) 256px, (min-width: 360px) 320px, calc(100vw - 40px)"
+                                : "(min-width: 1400px) 652px, (min-width: 1024px) calc((100vw - 96px) / 2), (min-width: 768px) calc((100vw - 80px) / 2), (min-width: 640px) calc(100vw - 48px), calc(100vw - 40px)"
 
-
-                        <CardFooter className="gap-3 pt-4">
-                            {/* Logic to handle specific links */}
-                            {project.githubLink ? (
-                                <Button variant="outline" size="sm" asChild>
-                                    <a href={project.githubLink} target="_blank" rel="noreferrer">
-                                        <Github className="mr-0.5 size-4" />
-                                        View Code
-                                    </a>
-                                </Button>
-                            ) : (
-                                <Button variant="outline" size="sm" disabled>
-                                    <Github className="mr-0.5 size-4" />
-                                    Private
-                                </Button>
-                            )}
-
-                            {project.deploymentLink && (
-                                <Button variant="default" size="sm" asChild>
-                                    <a href={project.deploymentLink} target="_blank" rel="noreferrer">
-                                        <ExternalLink className="mr-0.5 size-4" />
-                                        Visit Site
-                                    </a>
-                                </Button>
-                            )}
-
-                            {project.infoLink && (
-                                <Button variant="default" size="sm" asChild>
-                                    <a href={project.infoLink} target="_blank" rel="noreferrer">
-                                        <ExternalLink className="mr-0.5 size-4" />
-                                        More Info
-                                    </a>
-                                </Button>
-                            )}
-                        </CardFooter>
-                    </Card>
-                ))
-                }
-            </div >
-        </section >
-    );
+                        return (
+                            <li key={project.id} className={isLead || isStory ? "md:col-span-2" : undefined}>
+                                <article id={project.id} className={`h-full scroll-mt-20 border-b border-hairline pb-8 ${isStory ? "grid items-start gap-6 md:grid-cols-[16rem_minmax(0,1fr)] md:gap-8" : "flex flex-col"}`}>
+                                    {!textOnly && (
+                                        <img
+                                            src={project.preview}
+                                            srcSet={project.previewSources}
+                                            sizes={project.imageSizes || sizes}
+                                            alt={project.alt}
+                                            width={project.imageWidth}
+                                            height={project.imageHeight}
+                                            loading={isLead ? "eager" : "lazy"}
+                                            fetchPriority={isLead ? "high" : undefined}
+                                            decoding="async"
+                                            className={`w-full rounded-none border border-hairline bg-canvas-soft object-contain ${isLead || isStory ? "aspect-video" : "aspect-[4/3]"} ${isStory ? "max-w-80 md:max-w-none" : ""}`}
+                                        />
+                                    )}
+                                    <div className={isLead ? "mt-6 grid gap-6 md:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)] md:gap-12" : `flex flex-1 flex-col ${isStory || textOnly ? "" : "mt-5"}`}>
+                                        <div>
+                                            {project.focus && <p className="mb-3 text-body-sm font-bold uppercase text-ink">{project.focus}</p>}
+                                            <h3 className={`font-display text-balance text-ink ${isLead ? "text-display-md lg:text-display-lg" : "text-display-sm"}`}>{project.title}</h3>
+                                        </div>
+                                        <div className={`flex flex-1 flex-col ${isLead ? "" : "mt-4"}`}>
+                                            <p className="font-serif text-body-serif-md text-ink">{project.summary}</p>
+                                            {/* <p className="mt-4 font-serif text-body-serif-md text-ink">
+                                                <span className="mb-1 block font-sans text-body-sm font-bold">Implementation notes</span>
+                                                {project.impact}
+                                            </p> */}
+                                            <div className="mt-5"><ProjectMeta project={project} /></div>
+                                            <div className="mt-auto pt-5"><ProjectActions project={project} featured={isLead} /></div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </div>
+        </section>
+    )
 }

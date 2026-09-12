@@ -1,59 +1,60 @@
-import {
-    Avatar,
-    AvatarFallback,
-    AvatarImage,
-} from "@/components/ui/avatar"
-import { Button } from "./ui/button";
-import { Mail, Github, Linkedin, MapPin } from "lucide-react";
-import ReactMarkdown from "react-markdown";
+import { ArrowUpRight, Mail } from "lucide-react"
+
+import { Button } from "./ui/button"
 
 export default function Hero({ portfolioData }) {
-    const { personalInfo } = portfolioData;
+    const { personalInfo } = portfolioData
 
     return (
-        <section id="about" className="flex flex-col md:flex-row gap-8 md:gap-12 items-center justify-center space-x-6">
-            <Avatar className="size-30 md:size-40 border-0 border-primary/10">
-                <AvatarImage class="isDarkable" src={personalInfo.iconBlack} alt={personalInfo.name} fetchPriority="high" />
-                <AvatarFallback className="text-4xl">
-                    {personalInfo.name.split(' ').map(n => n[0]).join('')}
-                </AvatarFallback>
-            </Avatar>
-            <div className="space-y-4 items-start">
-                <h1 className="text-5xl md:text-6xl font-normal leading-tight">{personalInfo.name}</h1>
-                <div className="flex max-w-2xl items-center gap-2 prose text-sm md:text-[15px] leading-relaxed text-muted-foreground">
-                    <ReactMarkdown>{personalInfo.summary}</ReactMarkdown>
+        <section id="about">
+            <div className="mx-auto max-w-350 px-5 py-12 sm:px-6 md:py-16 lg:px-8 lg:py-20">
+                <div className="max-w-5xl">
+                    <p className="text-body-sm font-bold uppercase text-ink">{personalInfo.role}</p>
+                    <h1 className="mt-6 max-w-4xl font-display text-[2.5rem] leading-[0.96] tracking-[-0.35px] text-balance text-ink md:text-display-hero">
+                        {personalInfo.name}
+                    </h1>
+                    <p className="mt-8 max-w-4xl font-serif text-body-serif-lg text-ink">
+                        {personalInfo.summary}
+                    </p>
+
+                    <div className="mt-8 flex flex-wrap items-center gap-3">
+                        <Button variant="default" size="lg" asChild className="rounded-none">
+                            <a href={personalInfo.resumePath} download={`${personalInfo.name} Resume.pdf`}>
+                                Download Resume
+                            </a>
+                        </Button>
+
+                        <Button variant="outline" asChild className="rounded-none">
+                            <a href={`mailto:${personalInfo.email}`}>
+                                <Mail className="size-4" aria-hidden="true" />
+                                Email me
+                            </a>
+                        </Button>
+                    </div>
                 </div>
-                <div className="flex flex-wrap items-center pt-2 gap-3">
 
-                    <Button variant="default" size="lg" asChild className="rounded-full shadow-sm hover:shadow-md transition-all">
-                        <a href={personalInfo.resumePath} target="_blank" rel="noreferrer" download={personalInfo.name + " Resume.pdf"}>
-                            Download Resume
+                <div className="mt-12 grid border-t border-hairline sm:grid-cols-2">
+                    {[
+                        { label: "GitHub", href: personalInfo.github },
+                        { label: "LinkedIn", href: personalInfo.linkedin },
+                    ].map((link, index) => (
+                        <a
+                            key={link.label}
+                            href={link.href}
+                            target="_blank"
+                            rel="noreferrer"
+                            className={`flex min-h-14 items-center justify-between py-3 text-body-sm font-bold text-ink outline-none underline-offset-4 hover:underline focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring ${index === 0 ? "border-b border-hairline sm:border-r sm:border-b-0 sm:pr-5" : "sm:pl-5"}`}
+                        >
+                            <span>{link.label}</span>
+                            <span className="flex items-center gap-1">
+                                Visit profile
+                                <ArrowUpRight className="size-4" aria-hidden="true" />
+                                <span className="sr-only"> (opens in a new tab)</span>
+                            </span>
                         </a>
-                    </Button>
-
-                    <Button variant="outline" size="default" asChild className="rounded-full bg-card hover:bg-muted/50 border-muted">
-                        <a href={`mailto:${personalInfo.email}`} target="_blank" rel="noreferrer">
-                            <Mail className="size-4" />
-                            <span className="ml-0.5">{personalInfo.email}</span>
-                        </a>
-                    </Button>
-
-                    <Button variant="outline" size="default" asChild className="rounded-full bg-card hover:bg-muted/50 border-muted">
-                        <a href={personalInfo.github} target="_blank" rel="noreferrer">
-                            <Github className="size-4" />
-                            <span className="ml-0.5">GitHub</span>
-                        </a>
-                    </Button>
-
-                    <Button variant="outline" size="default" asChild className="rounded-full bg-card hover:bg-muted/50 border-muted">
-                        <a href={personalInfo.linkedin} target="_blank" rel="noreferrer">
-                            <Linkedin className="size-4" />
-                            <span className="ml-0.5">Linkedin</span>
-                        </a>
-                    </Button>
-
+                    ))}
                 </div>
             </div>
         </section>
-    );
+    )
 }
