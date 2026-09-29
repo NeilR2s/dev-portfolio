@@ -1,12 +1,16 @@
-@import "tailwindcss";
+@import "tailwindcss" source(".");
 @import "tw-animate-css";
+
+/* Retained primitives that are not imported by this page. Remove an exclusion
+   when adopting the corresponding component so its utilities are generated. */
+@source not "./components/ui/{accordion,aspect-ratio,avatar,badge,card,navigation-menu}.jsx";
 
 @font-face {
     font-family: "Inter";
     font-style: normal;
     font-weight: 400 700;
     font-display: swap;
-    src: url("/fonts/inter-latin.woff2") format("woff2");
+    src: url("../public/fonts/inter-latin.woff2") format("woff2");
 }
 
 @font-face {
@@ -14,7 +18,7 @@
     font-style: normal;
     font-weight: 400 700;
     font-display: swap;
-    src: url("/fonts/lora-latin.woff2") format("woff2");
+    src: url("../public/fonts/lora-latin.woff2") format("woff2");
 }
 
 @font-face {
@@ -22,7 +26,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url("/fonts/playfair-display-latin.woff2") format("woff2");
+    src: url("../public/fonts/playfair-display-latin.woff2") format("woff2");
 }
 
 @theme {

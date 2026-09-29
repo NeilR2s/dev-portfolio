@@ -14,6 +14,7 @@
     "media:generate": "bun scripts/media.mjs",
     "test": "bun test tests/content.test.js",
     "test:e2e": "bunx --bun playwright test",
+    "benchmark": "bun scripts/benchmark.mjs",
     "verify": "bun run content:check && bun run lint && bun run test && bun run build && bun run test:e2e"
   },
   "dependencies": {

@@ -1,18 +1,17 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
-import { fileURLToPath, URL } from 'node:url'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+import { fileURLToPath, URL } from "node:url";
 
 // https://vite.dev/config/
 export default defineConfig({
-    appType: 'mpa',
-    plugins: [
-        react(),
-        tailwindcss(),
-    ],
-    resolve: {
-        alias: {
-            "@": fileURLToPath(new URL('./src', import.meta.url)),
-        },
+  appType: "mpa",
+  plugins: [react(), tailwindcss()],
+  // Keep media cacheable and give the prerenderer a manifest entry for every URL.
+  build: { assetsInlineLimit: 0 },
+  resolve: {
+    alias: {
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
-})
+  },
+});

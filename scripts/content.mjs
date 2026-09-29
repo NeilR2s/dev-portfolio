@@ -63,7 +63,9 @@ export function documents(data = portfolioData) {
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
   <link rel="alternate" type="text/plain" href="/llms.txt" title="Portfolio summary" />
   <link rel="alternate" type="text/plain" href="/llms-full.txt" title="Full portfolio context" />
-  <link rel="preload" href="/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/public/fonts/lora-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/public/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/public/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="${url(path)}" />
   <meta property="og:title" content="${escapeHtml(title)}" />

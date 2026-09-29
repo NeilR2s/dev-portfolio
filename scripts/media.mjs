@@ -62,6 +62,14 @@ const icon = await sharp(join(root, 'src/assets/neil-black-icon.png'))
   .toFile(iconFile)
 outputs.push({ file: iconFile.slice(root.length), ...icon })
 
+// One small lossless asset covers the 32px header and 48px footer at up to 3x.
+const webpIconFile = join(imagesDir, 'neil-icon.webp')
+const webpIcon = await sharp(join(root, 'src/assets/neil-black-icon.png'))
+  .resize({ width: 144, height: 144, fit: 'inside', withoutEnlargement: true })
+  .webp({ lossless: true, effort: 6 })
+  .toFile(webpIconFile)
+outputs.push({ file: webpIconFile.slice(root.length), ...webpIcon })
+
 async function download(url, destination) {
   try {
     return await readFile(destination)

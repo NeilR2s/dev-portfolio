@@ -16,7 +16,7 @@ export const portfolioData = {
         resumePath: "/Artus-Resume.pdf",
         github: "https://github.com/NeilR2s",
         linkedin: "https://www.linkedin.com/in/neil-artus-652115304",
-        icon: "/images/neil-icon.png"
+        icon: "/images/neil-icon.webp"
     },
     education: {
         institution: "De La Salle University - Dasmariñas",

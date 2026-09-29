@@ -2,6 +2,7 @@ import { ArrowUpRight, Github } from "lucide-react"
 
 import { Button } from "./ui/button"
 import { SectionHeader } from "./Typography"
+import { mediaUrl, mediaSrcSet } from "../lib/media"
 
 function ProjectMeta({ project }) {
     return (
@@ -59,14 +60,13 @@ export default function Projects({ portfolioData, textOnly = false }) {
                                 <article id={project.id} className={`h-full scroll-mt-20 border-b border-hairline pb-8 ${isStory ? "grid items-start gap-6 md:grid-cols-[16rem_minmax(0,1fr)] md:gap-8" : "flex flex-col"}`}>
                                     {!textOnly && (
                                         <img
-                                            src={project.preview}
-                                            srcSet={project.previewSources}
+                                            src={mediaUrl(project.preview)}
+                                            srcSet={mediaSrcSet(project.previewSources)}
                                             sizes={project.imageSizes || sizes}
                                             alt={project.alt}
                                             width={project.imageWidth}
                                             height={project.imageHeight}
-                                            loading={isLead ? "eager" : "lazy"}
-                                            fetchPriority={isLead ? "high" : undefined}
+                                            loading="lazy"
                                             decoding="async"
                                             className={`w-full rounded-none border border-hairline bg-canvas-soft object-contain ${isLead || isStory ? "aspect-video" : "aspect-[4/3]"} ${isStory ? "max-w-80 md:max-w-none" : ""}`}
                                         />

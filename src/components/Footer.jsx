@@ -1,3 +1,5 @@
+import { mediaUrl } from "../lib/media"
+
 export default function Footer({ portfolioData }) {
     const { personalInfo } = portfolioData
     const year = portfolioData.site?.updated?.slice(0, 4)
@@ -17,7 +19,7 @@ export default function Footer({ portfolioData }) {
                 <div className="grid gap-10 md:grid-cols-[minmax(0,1.5fr)_repeat(2,minmax(10rem,0.5fr))]">
                     <div>
                         <div className="flex items-center gap-3">
-                            <img src={personalInfo.icon} alt="" width="48" height="48" className="size-12 object-contain invert" />
+                            <img src={mediaUrl(personalInfo.icon)} alt="" width="48" height="48" loading="lazy" className="size-12 object-contain invert" />
                             <p className="text-body-md font-bold tracking-[0.08em] uppercase">{personalInfo.name}</p>
                         </div>
                         <p className="mt-4 max-w-md font-serif text-body-serif-md text-white/75">{personalInfo.role}</p>

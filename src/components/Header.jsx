@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react"
 import { Menu, X } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
+import { mediaUrl } from "@/lib/media"
 
 const navigationLinks = [
     { label: "Experience", href: "/#experience" },
@@ -50,7 +51,7 @@ export default function Header({ portfolioData }) {
                     aria-label={`${personalInfo.name}, back to portfolio`}
                     onClick={() => setIsMenuOpen(false)}
                 >
-                    <img src={personalInfo.icon} alt="" width="32" height="32" className="size-8 object-contain" />
+                    <img src={mediaUrl(personalInfo.icon)} alt="" width="32" height="32" className="size-8 object-contain" />
                     <span className="hidden text-[13px] leading-none font-bold tracking-[0.12em] whitespace-nowrap uppercase min-[400px]:inline">
                         {personalInfo.name}
                     </span>
