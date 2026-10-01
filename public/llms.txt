@@ -1,8 +1,8 @@
 # Neil Artus - Backend & AI Software Engineer
 
-> I build distributed backend systems, applied AI, and cloud infrastructure. My work spans enterprise automation at Emerson and JG Summit, streaming research agents, and embedded AI prototypes. I focus on the systems behind the interface: APIs, data pipelines, authentication, and deployment.
+> I build distributed systems, applied AI, and cloud infrastructure. My work spans enterprise automation at Emerson and JG Summit, streaming research agents, and embedded AI prototypes. I focus on the systems behind the interface: APIs, data pipelines, authentication, and deployment.
 
-Last updated: 2026-09-05. Biography and private-project descriptions are owner-provided. Public repository links document implementation details, not independently audited outcomes.
+Last updated: 2026-10-01. Biography and private-project descriptions are owner-provided. Public repository links document implementation details, not independently audited outcomes.
 
 ## Contact and links
 

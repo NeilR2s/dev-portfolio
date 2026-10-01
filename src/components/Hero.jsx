@@ -1,15 +1,17 @@
-import { ArrowUpRight, Mail } from "lucide-react"
+import { ArrowUpRight, Mail } from "lucide-react";
 
-import { Button } from "./ui/button"
+import { Button } from "./ui/button";
 
 export default function Hero({ portfolioData }) {
-    const { personalInfo } = portfolioData
+    const { personalInfo } = portfolioData;
 
     return (
         <section id="about">
-            <div className="mx-auto max-w-350 px-5 py-12 sm:px-6 md:py-16 lg:px-8 lg:py-20">
+            <div className="mx-auto max-w-7xl px-5 py-12 sm:px-6 md:py-16 lg:px-8 lg:py-20">
                 <div className="max-w-5xl">
-                    <p className="text-body-sm font-bold uppercase text-ink">{personalInfo.role}</p>
+                    <p className="text-body-sm font-bold uppercase text-ink">
+                        {personalInfo.role}
+                    </p>
                     <h1 className="mt-6 max-w-4xl font-display text-[2.5rem] leading-[0.96] tracking-[-0.35px] text-balance text-ink md:text-display-hero">
                         {personalInfo.name}
                     </h1>
@@ -18,13 +20,25 @@ export default function Hero({ portfolioData }) {
                     </p>
 
                     <div className="mt-8 flex flex-wrap items-center gap-3">
-                        <Button variant="default" size="lg" asChild className="rounded-none">
-                            <a href={personalInfo.resumePath} download={`${personalInfo.name} Resume.pdf`}>
+                        <Button
+                            variant="default"
+                            size="lg"
+                            asChild
+                            className="rounded-none"
+                        >
+                            <a
+                                href={personalInfo.resumePath}
+                                download={`${personalInfo.name} Resume.pdf`}
+                            >
                                 Download Resume
                             </a>
                         </Button>
 
-                        <Button variant="outline" asChild className="rounded-none">
+                        <Button
+                            variant="outline"
+                            asChild
+                            className="rounded-none"
+                        >
                             <a href={`mailto:${personalInfo.email}`}>
                                 <Mail className="size-4" aria-hidden="true" />
                                 Email me
@@ -48,13 +62,19 @@ export default function Hero({ portfolioData }) {
                             <span>{link.label}</span>
                             <span className="flex items-center gap-1">
                                 Visit profile
-                                <ArrowUpRight className="size-4" aria-hidden="true" />
-                                <span className="sr-only"> (opens in a new tab)</span>
+                                <ArrowUpRight
+                                    className="size-4"
+                                    aria-hidden="true"
+                                />
+                                <span className="sr-only">
+                                    {" "}
+                                    (opens in a new tab)
+                                </span>
                             </span>
                         </a>
                     ))}
                 </div>
             </div>
         </section>
-    )
+    );
 }
